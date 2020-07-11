@@ -7,4 +7,4 @@ These is an introduction of Kuberntetesand hand-on exercises  prepared for Chapt
 
 ## References
 * Kubernetes [documentation](https://kubernetes.io/docs/home/)
-* kubectl [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+* Kubernetes [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
