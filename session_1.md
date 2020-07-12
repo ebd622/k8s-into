@@ -27,11 +27,26 @@ What is a Kubernetes cluster?
 
 * A cluster is a set of nodes grouped together. 
 * A node (also known as a minion in the past) is a machine physical or virtual on which  kubernetes is installed. 
-* 
+*
 
 #### Components
 
 <img src="images/components.PNG" width="70%">
+
+
+* **API server** acts as the front end for kubernetes. The users, management devices, Command line interfaces all talk to the API server to interact with the kubernetes cluster.
+
+
+* **ETCD key store**. ETCD is a distributed reliable key value store used by kubernetes to store all data used to manage the cluster. 
+  * When you have multiple nodes and multiple masters in your cluster, **etcd** stores all that information on all the nodes in the cluster in a distributed manner. 
+
+* **Scheduler** is responsible for distributing work or containers across multiple nodes. It looks for newly created containers and assigns them to Nodes.
+
+* **Controllers** are the brain behind orchestration. They are responsible for noticing and responding when nodes, containers or endpoints goes down. The controllers makes decisions to bring up new containers in such cases.
+
+* **Kubelet** is the agent that runs on each node in the cluster. The agent is responsible for making sure that the containers are running on the nodes as expected.
+
+* **Container Runtime** is a container hosting platform. This doesn’t habe to be docker, there are other container runtime alternatives available such as *Rocket* or *CRIO*
 
 #### Master vs Worker
 
