@@ -37,7 +37,7 @@ What is a Kubernetes cluster?
 * **API server** acts as the front end for kubernetes. The users, management devices, Command line interfaces all talk to the API server to interact with the kubernetes cluster.
 
 
-* **ETCD key store**. ETCD is a distributed reliable key value store used by kubernetes to store all data used to manage the cluster. 
+* **ETCD key store**. [ETCD](https://etcd.io) is a distributed reliable key value store used by kubernetes to store all data used to manage the cluster. 
   * When you have multiple nodes and multiple masters in your cluster, **etcd** stores all that information on all the nodes in the cluster in a distributed manner. 
 
 * **Scheduler** is responsible for distributing work or containers across multiple nodes. It looks for newly created containers and assigns them to Nodes.
