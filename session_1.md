@@ -49,7 +49,14 @@ What is a Kubernetes cluster?
 * **Container Runtime** is a container hosting platform. This doesn’t habe to be docker, there are other container runtime alternatives available such as *Rocket* or *CRIO*
 
 #### Master vs Worker
+So, there are two types of servers – Master and Worker and a set of components that make up Kubernetes.
+But how are these components distributed across different types of servers. In other words, how does one server become a master and the other slave?
 
 <img src="images/master_worker.PNG" width="80%">
+
+* The worker node is were the containers are hosted;
+* The worker nodes have the kubelet agent that is responsible for interacting with the master
+* The master server has the **API server** and that is what makes it a master
+
 
 
