@@ -8,3 +8,7 @@ These is an introduction of Kuberntetesand hand-on exercises  prepared for Chapt
 ## References
 * Kubernetes [documentation](https://kubernetes.io/docs/home/)
 * Kubernetes [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+* [Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/) includes Docker Engine, Docker CLI client, Docker Compose, Notary, Kubernetes, and Credential Helper.
+* [Kubernetes with Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/) is a tool that runs a single-node Kubernetes cluster inside a Virtual Machine (VM) on your laptop for users looking to try out Kubernetes or develop with it day-to-day
+
+
