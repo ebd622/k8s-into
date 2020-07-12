@@ -13,6 +13,13 @@ other backend services?
 To enable these functionalities you need an underlying platform with a set of resources. The platform needs to orchestrate the connectivity between the
 containers and automatically scale up or down based on the load. This whole process of automatically deploying and managing containers is known as **Container Orchestration**.
 
+#### Orchestration Technologies:
+* Docker Swarm
+* Kubernentes
+* MESOS
+
+
+
 ### Kubernetes Architecture
 What is a Kubernetes cluster?
 
