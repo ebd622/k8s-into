@@ -1,5 +1,19 @@
 # Chapter time 1
-### Architecture
+
+### Container Orchectration
+Container orchestration is all about managing the lifecycles of containers, especially in large, dynamic environments.
+
+Basic questions to be addressed:
+* What if your application relies on other containers such as database or messaging services or
+other backend services?
+* What if the number of users increase and you need to scale your application? You would also like to scale down when the load decreases
+
+<img src="images/ochestration.PNG" width="80%">
+
+To enable these functionalities you need an underlying platform with a set of resources. The platform needs to orchestrate the connectivity between the
+containers and automatically scale up or down based on the load. This whole process of automatically deploying and managing containers is known as **Container Orchestration**.
+
+### Kubernetes Architecture
 What is a Kubernetes cluster?
 
 <img src="images/arch_1.PNG" width="80%">
