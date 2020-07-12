@@ -55,8 +55,13 @@ But how are these components distributed across different types of servers. In o
 <img src="images/master_worker.PNG" width="80%">
 
 * The worker node is were the containers are hosted;
-* The worker nodes have the kubelet agent that is responsible for interacting with the master
-* The master server has the **API server** and that is what makes it a master
+* The worker nodes have the kubelet agent that is responsible for interacting with the master;
+* The master server has the **API server** and that is what makes it a master;
+* All the information gathered are stored in a key value store on the Master;
+* The master also has the controller manager and the scheduler;
+
+There are also other components as well, but we will stop there. The idea now is to understand what components constitute the master and
+worker nodes. 
 
 
 
