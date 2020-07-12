@@ -63,5 +63,20 @@ But how are these components distributed across different types of servers. In o
 There are also other components as well, but we will stop there. The idea now is to understand what components constitute the master and
 worker nodes. 
 
+#### kubectl CLI
 
+*Kubectl CLI* is the kube command line tool or **kubectl** or kube control as it is also called. The **kubectl**  is used to deploy and manage applications on a kubernetes cluster, to get cluster information, get the status of nodes in the cluster and many other things.
+
+Examples:
+
+```
+kubectl cluster-info
+```
+The command is used to view information about the cluster
+
+
+```
+kubectl get nodes
+```
+The command is used to list all the nodes of the cluster
 
