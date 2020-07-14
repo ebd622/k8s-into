@@ -80,3 +80,10 @@ kubectl get nodes
 ```
 The command is used to list all the nodes of the cluster
 
+### Kubernetes Concepts
+POD. What is a POD?
+
+A POD is the smallest object, that you can create in Kubernetes.
+Kubernetes does not deploy containers directly on the worker nodes. The containers are encapsulated into a POD. A POD is a single instance of an application. 
+
+
