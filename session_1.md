@@ -86,10 +86,12 @@ POD. What is a POD?
 A POD is the smallest object, that you can create in Kubernetes.
 Kubernetes does not deploy containers directly on the worker nodes. The containers are encapsulated into a POD. A POD is a single instance of an application. 
 
+Here we see the simplest case were you have a single node kubernetes cluster with a single instance of your application running in a single docker container encapsulated in a POD.
 
 <img src="images/pod_1.PNG" width="80%">
 
+What if the number of users accessing your application increase and you need to scale your application? We create a new POD with a new instance of the same application.
 
-
+What if the user base FURTHER increases and your current node has no sufficient capacity? Then you deploy additional PODs on a new node in the cluster. You will have a new node added to the cluster to expand the cluster’s physical capacity.
 
 <img src="images/pod_2.PNG" width="80%">
