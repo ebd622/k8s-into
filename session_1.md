@@ -95,3 +95,5 @@ What if the number of users accessing your application increase and you need to 
 What if the user base FURTHER increases and your current node has no sufficient capacity? Then you deploy additional PODs on a new node in the cluster. You will have a new node added to the cluster to expand the cluster’s physical capacity.
 
 <img src="images/pod_2.PNG" width="80%">
+
+To scale UP you create new PODs and to scale down you delete PODs. You do not add additional containers to an existing POD to scale your application.
