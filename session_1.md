@@ -102,8 +102,17 @@ To scale UP you create new PODs and to scale down you delete PODs. You do not ad
 
 ### Kubernetes Networking
 
+Let's start with a single node kubernetes cluster. The node has an IP address, for example  192.168.1.2. This is the IP address we use to access the kubernetes node, SSH into it etc.
+
+In case of Minikube setup we are talking about the IP address of the minikube virtual machine inside your Hypervisor. Your laptop may be having a different IP like 192.168.1.10. 
 
 <img src="images/netw_1.PNG" width="80%">
+
+In Kubernetes the IP address is assigned to a POD. Each POD in kubernetes gets its own internal IP Address. In this case its in the range 10.244 series and the IP assigned to the POD is 10.244.0.2. 
+
+So how is it getting this IP address? When Kubernetes is initially configured it creates an internal private network with the address 10.244.0.0 and all PODs are attached to it. When you deploy multiple PODs, they all get a separate IP assigned. 
+
+The PODs can communicate to each other through this IP. But accessing other PODs using this internal IP address MAY not be a good idea as its subject to change when PODs are recreated. We will see better ways to establish connections between PODs.
 
 
 <img src="images/netw_2.PNG" width="80%">
