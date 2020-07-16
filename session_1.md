@@ -97,3 +97,25 @@ What if the user base FURTHER increases and your current node has no sufficient 
 <img src="images/pod_2.PNG" width="80%">
 
 To scale UP you create new PODs and to scale down you delete PODs. You do not add additional containers to an existing POD to scale your application.
+
+
+
+### Kubernetes Networking
+
+
+<img src="images/netw_1.PNG" width="80%">
+
+
+<img src="images/netw_2.PNG" width="80%">
+
+
+<img src="images/netw_3.PNG" width="80%">
+
+
+<img src="images/netw_4.PNG" width="80%">
+
+
+
+
+
+
