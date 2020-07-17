@@ -119,6 +119,9 @@ But how does it work when you have multiple nodes in a cluster?
 
 <img src="images/netw_2.PNG" width="80%">
 
+In this case we have two nodes running kubernetes and they have IP addresses 192.168.1.2 and 192.168.1.3 (they are not part of the same cluster yet).
+
+Each of them has a single POD deployed. As discussed, these pods are attached to an internal network and they have their own IP addresses assigned. However they are the same. The two networks have an address 10.244.0.0 and the PODs deployed have the same address too.
 
 
 <img src="images/netw_3.PNG" width="80%">
