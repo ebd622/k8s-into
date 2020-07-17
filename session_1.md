@@ -115,7 +115,10 @@ So how is it getting this IP address? When Kubernetes is initially configured it
 The PODs can communicate to each other through this IP. But accessing other PODs using this internal IP address MAY not be a good idea as its subject to change when PODs are recreated. We will see better ways to establish connections between PODs.
 
 
+But how does it work when you have multiple nodes in a cluster?
+
 <img src="images/netw_2.PNG" width="80%">
+
 
 
 <img src="images/netw_3.PNG" width="80%">
