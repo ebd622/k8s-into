@@ -127,7 +127,7 @@ This is NOT going to work well when the nodes are part of the same cluster. The 
 
 When a kubernetes cluster is setup, kubernetes does NOT automatically setup any kind of networking to handle these issues. This is another issue. 
 
-Kubernetes expects that a networking which meets certain fundamental requirements will be setup. Some of these are that all the PODs in a cluster must be able to communicate  without having to configure NAT (Network Address Translation). 
+Kubernetes expects that a networking which meets certain fundamental requirements will be setup. Some of these are that all the PODs in a cluster must be able to communicate  without having to configure [NAT](https://en.wikipedia.org/wiki/Network_address_translation) (Network Address Translation). 
 
 All nodes must be able to communicate with PODs and all PODs must be able to communicate with the nodes in the cluster. 
 
