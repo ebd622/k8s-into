@@ -123,6 +123,17 @@ In this case we have two nodes running kubernetes and they have IP addresses 192
 
 Each of them has a single POD deployed. As discussed, these pods are attached to an internal network and they have their own IP addresses assigned. However they are the same. The two networks have an address 10.244.0.0 and the PODs deployed have the same address too.
 
+This is NOT going to work well when the nodes are part of the same cluster. The PODs have the same IP addresses and that will lead to IP conflicts in the network. That is one issue. 
+
+When a kubernetes cluster is setup, kubernetes does NOT automatically setup any kind of networking to handle these issues. This is another issue. 
+
+Kubernetes expects that a networking which meets certain fundamental requirements will be setup. Some of these are that all the PODs in a cluster must be able to communicate  without having to configure NAT (Network Address Translation). 
+
+All nodes must be able to communicate with PODs and all PODs must be able to communicate with the nodes in the cluster. 
+
+A networking solution that meets these criteria needs to be setup when installing a cluster. There are multiple pre-built solutions available for this. 
+
+
 
 <img src="images/netw_3.PNG" width="80%">
 
