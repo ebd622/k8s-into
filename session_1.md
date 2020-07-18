@@ -156,5 +156,5 @@ So, go back to the cluster, with the networking setup:
 
 Now it manages the networks and IPs in the nodes and assigns a different network address for each network in the nodes. This creates a virtual network of all PODs and nodes were they are all assigned a unique IP Address. 
 
-Using simple routing techniques the cluster networking enables communication between the different PODs or Nodes to meet the networking requirements of kubernetes. Thus all PODs can now communicate to each other using the assigned IP addresses.
+Using simple routing techniques the cluster networking enables communication between the different PODs or Nodes to meet the networking requirements. Thus all PODs can now communicate to each other using the assigned IP addresses.
 
