@@ -134,8 +134,21 @@ All nodes must be able to communicate with PODs and all PODs must be able to com
 A networking solution that meets these criteria needs to be setup when installing a cluster. There are multiple pre-built solutions available for this. 
 
 
-
 <img src="images/netw_3.PNG" width="80%">
+
+
+Some of them are:
+
+* Cisco ACI networks
+* Cilium 
+* Big Cloud Fabric
+* Flannel
+* Vmware NSX-t 
+* Calico
+
+Depending on the platform where where you deploy your Cluster on you may use any of these solutions.
+
+
 
 
 <img src="images/netw_4.PNG" width="80%">
