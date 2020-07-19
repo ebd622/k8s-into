@@ -31,6 +31,8 @@ What is a Kubernetes cluster?
 
 #### Components
 
+A Kubernetes cluster consists of different components, let's look into the most important ones:
+
 <img src="images/components.PNG" width="70%">
 
 
@@ -47,6 +49,8 @@ What is a Kubernetes cluster?
 * **Kubelet** is the agent that runs on each node in the cluster. The agent is responsible for making sure that the containers are running on the nodes as expected.
 
 * **Container Runtime** is a container hosting platform. This doesn’t habe to be docker, there are other container runtime alternatives available such as *Rocket* or *CRIO*
+
+More details about the components can found here: [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/).
 
 #### Master vs Worker
 So, there are two types of servers – Master and Worker(s) and a set of components that make up Kubernetes.
