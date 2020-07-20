@@ -165,4 +165,13 @@ Using simple routing techniques the cluster networking enables communication bet
 ### PODs with YAML
 
 
+<img src="images/pods_yaml_1.PNG" width="80%">
+
+
+<img src="images/pods_yaml_2.PNG" width="80%">
+
+
+<img src="images/pods_yaml_3.PNG" width="80%">
+
+
 
