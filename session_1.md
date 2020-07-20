@@ -162,3 +162,7 @@ Now it manages the networks and IPs in the nodes and assigns a different network
 
 Using simple routing techniques the cluster networking enables communication between the different PODs or Nodes to meet the networking requirements. Thus all PODs can now communicate to each other using the assigned IP addresses.
 
+### PODs with YAML
+
+
+
