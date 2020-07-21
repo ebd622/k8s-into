@@ -183,7 +183,23 @@ value for image is nginx .
 
 <img src="images/pods_yaml_3.PNG" width="80%">
 
-To create and run a Pod 
+To create a Pod run the following command:
+
+```
+kubectl create -f pod-definition.yaml
+```
+
+To check a created Pod:
+
+```
+kubectl get pods
+```
+
+To get more details about a Pod:
+
+```
+kubectl describe <pod-name>
+```
 
 
 
