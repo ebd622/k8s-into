@@ -168,6 +168,14 @@ Any  kubernetes definition file always contains 4 top level fields. These are to
 
 <img src="images/pods_yaml_1.PNG" width="50%">
 
+* **apiVersion**: This is the version of the kubernetes API we’re used to create an object. Depending on what we are trying to create we must use the right apiVersion. 
+
+* **kind**: refers to the type of object that will be created. In this example it is a Pod. Some other possible values here could be ReplicaSet or Deployment or Service, or others. 
+
+* **metadata**: is data about the object like its name, labels etc. It’s important to note that under metadata, you can only specify name or labels (or anything else that kubernetes expects to be here). You cannot add any other property. However, under labels you can have any kind of key or value pairs as you wish;
+
+* **spec**: the section specifies container(s) in a Pod - a container name and an image. 
+
 
 <img src="images/pods_yaml_2.PNG" width="80%">
 
