@@ -205,7 +205,7 @@ kubectl describe <pod-name>
 
 Each pod has a status object, the status object keeps the phase field.
 
-<img src="images/pod_life_style.PNG" width="80%">
+<img src="images/pod_life_style.PNG" width="60%">
 
 * **Pending**: The Pod has been accepted by the Kubernetes system, but one or more of the Container images has not been created. This includes time before being scheduled as well as time spent downloading images over the network, which could take a while.
 
