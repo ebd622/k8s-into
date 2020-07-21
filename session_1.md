@@ -164,6 +164,7 @@ Using simple routing techniques the cluster networking enables communication bet
 
 ### PODs with YAML
 
+Any  kubernetes definition file always contains 4 top level fields. These are top level or root level properties, they are required, so they must be in a configuration file.
 
 <img src="images/pods_yaml_1.PNG" width="50%">
 
