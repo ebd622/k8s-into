@@ -207,6 +207,15 @@ Each pod has a status object, the status object keeps the phase field.
 
 <img src="images/pod_life_style.PNG" width="80%">
 
+TODO
 
+The advantage of Kubernetes is its ability to restart the pods/containers automagically. This can be define with the **restartPolicy** field. 
+
+The field accepts the values: 
+* **Always**
+* **onFailure**
+* **Never**
+
+The default value is Always. That is whenever a pod is terminated with failed status, then the Kubernetes system will try to restart the pod.
 
 
