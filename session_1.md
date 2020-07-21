@@ -176,11 +176,15 @@ Any  kubernetes definition file always contains 4 top level fields. These are to
 
 * **spec**: the section specifies container(s) in a Pod - a container name and an image. 
 
-
 <img src="images/pods_yaml_2.PNG" width="80%">
 
+The property *containers* is a list because PODs can have multiple containers within them. In this case we will only add a single item in the list, since we plan to have only a single container in the POD. The item in the list is a dictionary, so add a name and image property. The
+value for image is nginx .
 
 <img src="images/pods_yaml_3.PNG" width="80%">
+
+To create and run a Pod 
+
 
 
 
