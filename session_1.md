@@ -201,6 +201,9 @@ To get more details about a Pod:
 kubectl describe <pod-name>
 ```
 
+#### Pods life cycle
+
+
 
 
 
