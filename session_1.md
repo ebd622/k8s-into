@@ -203,6 +203,9 @@ kubectl describe <pod-name>
 
 #### Pods life cycle
 
+Each pod has a status object, the status object keeps the phase field.
+
+<img src="images/pod_life_style.PNG" width="80%">
 
 
 
