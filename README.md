@@ -4,6 +4,7 @@ These is an introduction of Kuberntetes and hand-on exercises prepared for Chapt
 
 * [Chapter time 1](https://github.com/ebd622/k8s-into/blob/master/session_1.md): Overview
 * [Chapter time 2](https://github.com/ebd622/k8s-into/blob/master/session_1.md): Kubernetes concepts
+* [Chapter time 3](https://github.com/ebd622/k8s-into/blob/master/session_1.md): Assignment
 
 ## References
 * Kubernetes [documentation](https://kubernetes.io/docs/home/)
