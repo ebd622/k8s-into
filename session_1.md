@@ -236,7 +236,7 @@ There are two ways to create any object in Kubernetes:
 
 #### 1.1 Declarative way
 ```
-kubectl creat -f <pod-definition-file>
+kubectl create -f <pod-definition-file>
 ```
 
 
@@ -306,4 +306,18 @@ kubectl exec -it <pod-name> -- bash
 
 
 ### 5. Delete PODs
+
+#### 5.1 Declarative way
+
+```
+kubectl create -f <pod-definition-file>
+```
+
+
+#### 5.2 Imperative way
+
+
+```
+kubectl delete pod <pod-name>
+```
 
