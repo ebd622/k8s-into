@@ -226,3 +226,29 @@ The field accepts the values:
 The default value is Always. That is whenever a pod is terminated with failed status, then the Kubernetes system will try to restart the pod.
 
 
+#### Commands
+
+### Create a POD
+
+There are two ways to create any object in Kubernetes: 
+* Declarative - using configuration files;
+* Imperative - using commands
+
+## Declarative way
+```
+kubectl creat -f <pod-definition-file>
+```
+
+
+## Imperative way
+
+```
+kubectl run my-nginx --image=nginx --restart=Never -o yaml --dry-run
+```
+- my-nginx - the name of a POD
+- nginx - the image used to crete a POD;
+- Never - restart policy;
+- yaml - generate output in YAML-format;
+- dery-run - just generate output YAML. No POD will be created
+
+
