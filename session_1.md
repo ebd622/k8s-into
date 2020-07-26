@@ -283,11 +283,27 @@ kubectl describe pod <pod-name>
 
 ### 3. Get container logs
 
+```
+kubectl logs <pod-name>
+```
+
 
 
 ### 4. Execute a command in a container
 
+Run the *env* command in a container:
+
+```
+kubectl exec -it <pod-name> -- env
+```
+
+Run a shell in a container:
+
+```
+kubectl exec -it <pod-name> -- bash
+```
+
+
 
 ### 5. Delete PODs
-
 
