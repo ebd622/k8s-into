@@ -226,29 +226,68 @@ The field accepts the values:
 The default value is Always. That is whenever a pod is terminated with failed status, then the Kubernetes system will try to restart the pod.
 
 
-#### Commands
+## Commands
 
-### Create a POD
+### 1. Create a POD
 
 There are two ways to create any object in Kubernetes: 
 * Declarative - using configuration files;
 * Imperative - using commands
 
-## Declarative way
+#### 1.1 Declarative way
 ```
 kubectl creat -f <pod-definition-file>
 ```
 
 
-## Imperative way
+#### 1.2 Imperative way
 
+Generate YAML-file without creating a POD:
 ```
 kubectl run my-nginx --image=nginx --restart=Never -o yaml --dry-run
 ```
-- my-nginx - the name of a POD
-- nginx - the image used to crete a POD;
-- Never - restart policy;
-- yaml - generate output in YAML-format;
-- dery-run - just generate output YAML. No POD will be created
+- **my-nginx** - the name of a POD
+- **nginx** - the image used to create  a POD;
+- **Never** - restart policy;
+- **yaml** - generate output in YAML-format;
+- **dry-run** - just generate output YAML. No POD will be created
+
+
+Create a POD:
+```
+kubectl run my-nginx --image=nginx --restart=Never
+```
+
+
+### 2. Get info about PODs
+
+Get all the pods created in the default namespace:
+
+```
+kubectl get pod
+```
+
+Get extended info about PODs created in the default namespace:
+
+```
+kubectl get pod -o wide
+```
+
+Get details about a particular by its name
+
+```
+kubectl describe pod <pod-name>
+```
+
+
+
+### 3. Get container logs
+
+
+
+### 4. Execute a command in a container
+
+
+### 5. Delete PODs
 
 
