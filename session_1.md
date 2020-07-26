@@ -230,7 +230,7 @@ The default value is Always. That is whenever a pod is terminated with failed st
 
 ### 1. Create a POD
 
-There are two ways to create any object in Kubernetes: 
+There are two ways to create/delete any object in Kubernetes: 
 * Declarative - using configuration files;
 * Imperative - using commands
 
