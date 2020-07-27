@@ -2,6 +2,14 @@
 
 Kubernetes Controllers are the brain behind Kubernetes. Controllers are processes that monitor kubernetes objects and respond accordingly. Let's consider one controller in particular - Replication Controller.
 
+### Replication Controller
+
+Replication Controller is used to provide customers with
+
+* High Availability
+* Load Balancing and Scaling
+
+
 #### High Availability
 
 When an application crashes for some reason the POD will fail. It means that users will no longer be able to access our application. To prevent users from losing access to our application, we would like to have more than one instance or POD running at the same time. 
