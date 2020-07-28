@@ -34,4 +34,4 @@ Thus the replication controller ensures that the specified number of PODs are ru
 
 #### Labels and Selectors
 
-<img src="images/RC_4.PNG" width="80%">
+<img src="images/RC_4.PNG" width="100%">
