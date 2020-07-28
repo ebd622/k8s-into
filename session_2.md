@@ -27,3 +27,12 @@ Thus the replication controller ensures that the specified number of PODs are ru
 
 <img src="images/RC_2.PNG" width="80%">
 
+
+#### ReplicaController vs ReplicaSet
+
+
+
+#### Labels and Selectors
+
+
+
