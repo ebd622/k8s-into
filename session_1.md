@@ -225,6 +225,9 @@ The field accepts the values:
 
 The default value is Always. That is whenever a pod is terminated with failed status, then the Kubernetes system will try to restart the pod.
 
+## ConfigMap and Secret
+TOTO
+
 
 ## Commands
 
