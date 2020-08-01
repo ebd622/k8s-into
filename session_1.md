@@ -1,6 +1,6 @@
 # Chapter time 1
 
-### Container Orchectration
+## Container Orchectration
 Container orchestration is all about managing the lifecycles of containers, especially in large, dynamic environments.
 
 Basic questions to be addressed:
@@ -13,14 +13,14 @@ other backend services?
 To enable these functionalities you need an underlying platform with a set of resources. The platform needs to orchestrate the connectivity between the
 containers and automatically scale up or down based on the load. This whole process of automatically deploying and managing containers is known as **Container Orchestration**.
 
-#### Orchestration Technologies:
+### Orchestration Technologies:
 * Docker Swarm
 * Kubernentes
 * MESOS
 
 
 
-### Kubernetes Architecture
+## Kubernetes Architecture
 What is a Kubernetes cluster?
 
 <img src="images/arch_1.PNG" width="80%">
@@ -29,7 +29,7 @@ What is a Kubernetes cluster?
 * A node (also known as a minion in the past) is a machine physical or virtual on which  kubernetes is installed. 
 *
 
-#### Components
+### Components
 
 A Kubernetes cluster consists of different components, let's look into the most important ones:
 
@@ -52,7 +52,7 @@ A Kubernetes cluster consists of different components, let's look into the most 
 
 More details about the components can found here: [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/).
 
-#### Master vs Worker
+### Master vs Worker
 So, there are two types of servers – Master and Worker(s) and a set of components that make up Kubernetes.
 But how are these components distributed across different types of servers. In other words, how does one server become a master and the other slave?
 
@@ -67,7 +67,7 @@ But how are these components distributed across different types of servers. In o
 There are also other components as well, but we will stop there. The idea now is to understand what components constitute the master and
 worker nodes. 
 
-#### kubectl CLI
+### kubectl CLI
 
 *Kubectl CLI* is the kube command line tool or **kubectl** or kube control as it is also called. The **kubectl**  is used to deploy and manage applications on a kubernetes cluster, to get cluster information, get the status of nodes in the cluster and many other things.
 
@@ -84,7 +84,7 @@ kubectl get nodes
 ```
 The command is used to list all the nodes of the cluster
 
-### Kubernetes Concepts
+## Kubernetes Concepts
 POD. What is a POD?
 
 A POD is the smallest object, that you can create in Kubernetes.
@@ -104,7 +104,7 @@ To scale UP you create new PODs and to scale down you delete PODs. You do not ad
 
 
 
-### Kubernetes Networking
+## Kubernetes Networking
 
 Let's start with a single node kubernetes cluster. The node has an IP address, for example  192.168.1.2. This is the IP address we use to access the kubernetes node, SSH into it etc.
 
@@ -162,7 +162,7 @@ Now it manages the networks and IPs in the nodes and assigns a different network
 
 Using simple routing techniques the cluster networking enables communication between the different PODs or Nodes to meet the networking requirements. Thus all PODs can now communicate to each other using the assigned IP addresses.
 
-### PODs with YAML
+## PODs with YAML
 
 Any  kubernetes definition file always contains 4 top level fields. These are top level or root level properties, they are required, so they must be in a configuration file.
 
@@ -201,7 +201,7 @@ To get more details about a Pod:
 kubectl describe <pod-name>
 ```
 
-#### Pods life cycle
+### Pods life cycle
 
 Each pod has a status object, the status object keeps the phase field.
 
