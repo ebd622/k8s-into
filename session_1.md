@@ -227,7 +227,13 @@ The default value is Always. That is whenever a pod is terminated with failed st
 
 ## Environment Variables
 
-TOTO
+Let's see how to pass in an environment variable in Kubernetes. To set an environment variable, use the "env" property, it an array. 
+
+
+
+
+
+
 ### ConfigMap
 
 ### Secret
