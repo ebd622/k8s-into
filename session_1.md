@@ -249,6 +249,7 @@ Just like any other Kubernetes objects, there are two ways of creating a ConfigM
 
 ##### Declarative way:
 
+<img src="images/cm_1.PNG" width="60%">
 
 
 ##### Imperative way:
