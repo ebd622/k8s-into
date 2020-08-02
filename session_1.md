@@ -276,6 +276,7 @@ As mentioned before, secrets are used to store sensitive data and are stored in 
 ```
 kubectl create secret generic app-secret --from-literal=DB_host=mysql --from-literal=DB_User=root --from-literal=DB_Password=passwrd
 ```
+When creating a secret in imperative way you don't need to encode values.
 
 ##### Encode/Decode secrets
 
