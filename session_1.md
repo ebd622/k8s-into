@@ -263,6 +263,8 @@ To inject an environment variable in the POD, add a new property to the containe
 
 ### Secret
 
+Secrets are used to store sensitive information, like passwords or keys. They are similar to configMaps, except that they are stored in an encoded or hashed format. As with configMaps, there are two steps involved in working with Secrets. First, create the secret and second inject it into Pod.
+
 
 ## Commands
 
