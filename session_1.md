@@ -254,6 +254,9 @@ Just like any other Kubernetes objects, there are two ways of creating a ConfigM
 
 ##### Imperative way:
 
+```
+kubectl create configmap app-config --from-literal=APP_COLOR=blue --from-literal=APP_MODE=prod
+```
 
 
 To inject an environment variable in the POD, add a new property to the container called envFrom. The envFrom property is a list, so we can pass as many environment variables as required. 
