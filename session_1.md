@@ -265,6 +265,28 @@ To inject an environment variable in the POD, add a new property to the containe
 
 Secrets are used to store sensitive information, like passwords or keys. They are similar to configMaps, except that they are stored in an encoded or hashed format. As with configMaps, there are two steps involved in working with Secrets. First, create the secret and second inject it into Pod.
 
+##### Declarative way:
+
+<img src="images/sec_1.PNG" width="60%">
+
+##### Imperative way:
+
+```
+kubectl create secret generic app-secret --from-literal=DB_host=mysql --from-literal=DB_User=root --from-literal=DB_Password=passwrd
+```
+
+##### Encode/Decode secrets
+
+<img src="images/sec_2.PNG" width="60%">
+
+
+<img src="images/sec_3.PNG" width="60%">
+
+
+To inject secrets in the POD, add a new property to the container called envFrom. The envFrom property is a list, so we can pass as many environment variables as required. 
+
+<img src="images/sec_4.PNG" width="60%">
+
 
 ## Commands
 
