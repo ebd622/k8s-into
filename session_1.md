@@ -229,10 +229,11 @@ The default value is Always. That is whenever a pod is terminated with failed st
 
 Let's see how to pass in an environment variable in Kubernetes. To set an environment variable, use the "env" property, it an array. 
 
+<img src="images/env_1.PNG" width="60%">
 
+This is a direct way of specifying the environment variables using a plain key value pair format. However there are other ways of setting the environment variables such as using **ConfigMaps** and **Secrets**. The difference in this case is that instead of specifying value, we say valueFrom . And then a specification of configMap or secret.
 
-
-
+<img src="images/env_2.PNG" width="60%">
 
 ### ConfigMap
 
