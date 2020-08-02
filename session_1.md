@@ -237,6 +237,25 @@ This is a direct way of specifying the environment variables using a plain key v
 
 ### ConfigMap
 
+ConfigMaps are used to pass configuration data in the form of key value pairs in Kubernetes.
+
+When a POD is created, inject the ConfigMap into the POD, so the key value pairs are available as environment variables for the application hosted inside the container in the POD.
+
+So there are two phases involved in configuring ConfigMaps:
+- first: create the ConfigMaps;
+- second: inject them into the POD.
+
+Just like any other Kubernetes objects, there are two ways of creating a ConfigMap. The imperative way - without using a ConfigMap definition file and the Declarative way by using a ConfigMap Definition file.
+
+##### Declarative way:
+
+
+
+##### Imperative way:
+
+
+
+
 ### Secret
 
 
