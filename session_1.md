@@ -391,3 +391,64 @@ kubectl create -f <pod-definition-file>
 kubectl delete pod <pod-name>
 ```
 
+### 6. ConfigMaps
+
+#### 6.1 Cretate ConfigMap
+
+Create a ConfigMap with the name **app-config** and key/values:
+
+- APP_COLOR=blue
+- APP_MODE=prod
+
+```
+kubectl create configmap app-config --from-literal=APP_COLOR=blue --from-literal=APP_MODE=prod
+```
+
+
+#### 6.2 View ConfigMap
+
+Get all the ConfigMap-s in the default namespace:
+```
+kubectl get configmap 
+```
+or
+```
+kubectl get cm 
+```
+
+Get a ConfigMap by a name:
+```
+kubectl get configmap <config-map-name>
+```
+
+#### 6.2 Describe ConfigMap
+
+Describe all the ConfigMap-s in the default namespace:
+```
+kubectl describe configmap 
+```
+
+Describe a specific ConfigMap:
+```
+kubectl describe configmap <config-map-name>
+```
+
+#### 6.3 Delete ConfigMap
+```
+kubectl delete configmap <config-map-name>
+```
+
+
+### 7. Secrets
+
+#### 6.1 Cretate Secrets
+```
+kubectl create secret generic app-secret --from-literal=DB_host=mysql --from-literal=DB_User=root --from-literal=DB_Password=passwrd
+```
+
+
+#### 6.2 View Secrets
+
+
+#### 6.3 Delete Secrets
+
