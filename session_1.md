@@ -267,6 +267,8 @@ Secrets are used to store sensitive information, like passwords or keys. They ar
 
 ##### Declarative way:
 
+As mentioned before, secrets are used to store sensitive data and are stored in an encoded format. So, while creating a secret with the declarative approach, you must specify the secret values in a hashed format.
+
 <img src="images/sec_1.PNG" width="60%">
 
 ##### Imperative way:
@@ -277,8 +279,13 @@ kubectl create secret generic app-secret --from-literal=DB_host=mysql --from-lit
 
 ##### Encode/Decode secrets
 
+How do you convert the data from plain text to an encoded format?
+
+On a linux host run the command echo –n followed by the text you are trying to convert, which is mysql in this case and pipe that to the base64 utility.
+
 <img src="images/sec_2.PNG" width="60%">
 
+For decoding use the same base64 command you used in linux to encode it, but this time add a decode option to it:
 
 <img src="images/sec_3.PNG" width="60%">
 
