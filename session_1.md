@@ -470,6 +470,12 @@ Describe a specific Secret:
 kubectl describe secret <secret-name>
 ```
 
-
 #### 7.4 Delete Secrets
+```
+kubectl delete secret <secret-name>
+```
 
+
+
+## Hands-on exercise
+TODO
