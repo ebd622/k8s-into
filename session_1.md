@@ -449,6 +449,16 @@ kubectl create secret generic app-secret --from-literal=DB_host=mysql --from-lit
 
 #### 6.2 View Secrets
 
+Get all Secrets in the default namespace:
+```
+kubectl get secrets
+```
+
+Get a Secret by a name:
+```
+kubectl get secret <secret-name>
+```
+
 
 #### 6.3 Delete Secrets
 
