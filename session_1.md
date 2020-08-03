@@ -441,13 +441,13 @@ kubectl delete configmap <config-map-name>
 
 ### 7. Secrets
 
-#### 6.1 Cretate Secrets
+#### 7.1 Cretate Secrets
 ```
 kubectl create secret generic app-secret --from-literal=DB_host=mysql --from-literal=DB_User=root --from-literal=DB_Password=passwrd
 ```
 
 
-#### 6.2 View Secrets
+#### 7.2 View Secrets
 
 Get all Secrets in the default namespace:
 ```
@@ -458,7 +458,18 @@ Get a Secret by a name:
 ```
 kubectl get secret <secret-name>
 ```
+#### 7.3 Describe Secrets
+
+Describe all the Secrets in the default namespace:
+```
+kubectl describe secrets 
+```
+
+Describe a specific Secret:
+```
+kubectl describe secret <secret-name>
+```
 
 
-#### 6.3 Delete Secrets
+#### 7.4 Delete Secrets
 
