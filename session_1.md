@@ -328,6 +328,11 @@ Create a POD:
 kubectl run my-nginx --image=nginx --restart=Never
 ```
 
+Create a POD with a specified tag:
+```
+kubectl run my-nginx --image=nginx:1.7.1 --restart=Never
+```
+
 
 ### 2. Get info about PODs
 
