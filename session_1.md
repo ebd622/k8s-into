@@ -319,7 +319,7 @@ kubectl run my-nginx --image=nginx --restart=Never -o yaml --dry-run
 - **my-nginx** - the name of a POD
 - **nginx** - the image used to create  a POD;
 - **Never** - restart policy;
-- **yaml** - generate output in YAML-format;
+- **yaml** - generate output in YAML-format (another option is **json**);
 - **dry-run** - just generate output YAML. No POD will be created
 
 
