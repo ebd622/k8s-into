@@ -483,4 +483,14 @@ kubectl delete secret <secret-name>
 
 
 ## Hands-on exercise
-TODO
+
+1. Create a POD with the following specification:
+
+- POD name: nginx1
+- Image: nginx
+
+2. Check the status of the created ("get", "describe"):
+
+- Wait till the status will be "running"
+
+3. Check the labels (use "-show-labels")
