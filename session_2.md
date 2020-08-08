@@ -63,5 +63,8 @@ were labelling our PODs comes in handy.
 
 We could now provide these labels as a filter for replicaset. Under the selector section we use the **matchLabels** filter and provide the same label that we used while creating the pods. This way the replicaset knows which pods to monitor.
 
+The same concept labels/selectors is used in many other places in Kubernetes.
+
+
 
 
