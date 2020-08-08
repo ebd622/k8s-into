@@ -50,4 +50,18 @@ The ReplicaSet selector also provides many other options for matching labels tha
 
 #### Labels and Selectors
 
+What is the deal with Labels and Selectors? Why do we label our PODs and objects in kubernetes? Let us look at a simple scenario. Say we deployed 3 instances of our frontend web application as 3 PODs:
+
 <img src="images/RC_4.PNG" width="100%">
+
+We would like to create a replica set to ensure that we have 3 active PODs at anytime. This is one of the use cases of replica sets. 
+
+You can use it to monitor existing pods, if you have them already created. In case they were not created, the replica set will create them for you. The role of the replicaset is to monitor the pods and if any of them were to fail, deploy new ones. The replica set is a process that monitors the pods. 
+
+But how does the replicaset *know what pods to monitor*? There could be 100s of other PODs in the cluster running different application. This is
+were labelling our PODs comes in handy. 
+
+We could now provide these labels as a filter for replicaset. Under the selector section we use the **matchLabels** filter and provide the same label that we used while creating the pods. This way the replicaset knows which pods to monitor.
+
+
+
