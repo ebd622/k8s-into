@@ -36,7 +36,17 @@ As you can see, the replication controller spans across multiple nodes in the cl
 
 #### ReplicaController vs ReplicaSet
 
+There are two similar terms: **Replication Controller** and **Replica Set**. Both have the same purpose but they are not the same. Replication
+Controller is the older technology that is being replaced by Replica Set. Replica set is the new recommended way to setup replication. 
+
+This is how a ReplicaSet is created:
+
 <img src="images/RC_3.PNG" width="40%">
+
+A section "selector" is a required section for ReplicaSet. This is a major difference between Replication Controller and Replica Set - in Replication Controller the section "selector" is NOT required but still available.PODs.
+
+The ReplicaSet selector also provides many other options for matching labels that were not available in a replication controller.
+
 
 #### Labels and Selectors
 
