@@ -25,7 +25,13 @@ Thus the replication controller ensures that the specified number of PODs are ru
 
 #### Load Balancing and Scaling
 
+Another reason we need replication controller is to create multiple PODs to share the load across them. When the number of users increase we deploy additional POD to balance the load across the pods. 
+
+If the demand further increases and If we were to run out of resources on the first node, we could deploy additional PODs across other nodes in the cluster. 
+
 <img src="images/RC_2.PNG" width="80%">
+
+As you can see, the replication controller spans across multiple nodes in the cluster. It helps us balance the load across multiple pods on different nodes.
 
 
 #### ReplicaController vs ReplicaSet
