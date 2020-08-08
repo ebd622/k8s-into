@@ -65,6 +65,24 @@ We could now provide these labels as a filter for replicaset. Under the selector
 
 The same concept labels/selectors is used in many other places in Kubernetes.
 
+#### Scale
 
+How can we scale replicas? There are different ways to do this:
+
+* Update the number of replicas in the definition file and run the kubectl **replace** command:
+
+```
+kubectl replace -f replica-definition.yml
+```
+
+* run the kubectl **scale** command:
+
+```
+kubectl scale --replicas=3 <replica-set-name>
+```
+
+### Deployment
+
+TODO
 
 
