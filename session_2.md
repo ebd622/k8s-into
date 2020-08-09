@@ -96,7 +96,13 @@ The following use cases are described in details in the [Kubernetes documentatio
 * Pause the Deployment to apply multiple fixes to its PodTemplateSpec and then resume it to start a new rollout. Use the status of the Deployment as an indicator that a rollout has stuck.
 * Clean up older ReplicaSets that you don't need anymore.
 
-### Create Deployment
+##### Create Deployment
+The deployment definition file is very similar to ReplicaSet, just replace "ReplicaSet" with "Deployment":
+
+<img src="images/deployment_2.PNG" width="100%">
+
+
+
 
 
 
