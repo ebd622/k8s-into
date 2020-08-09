@@ -149,6 +149,25 @@ The second strategy is were we do not destroy all of them at once. Instead we ta
 
 if you do not specify a strategy while creating the deployment, it will assume it to be Rolling Update. In other words, RollingUpdate is the default Deployment Strategy.
 
+There are a few ways to update a deployment:
+* Modify a deployment-definition yaml-file and the command:
+
+```
+kubectl apply f deployment-definition.yml
+```
+
+* Run the command to set a new image:
+
+```
+kubectl set image <deployment-name> deployment nginx=nginx:1.9.1
+```
+
+* Run the command to edit a running deployment:
+
+```
+kubectl edit deployment <deployment-name>
+```
+
 
 
 ### Upgrades
