@@ -83,6 +83,10 @@ kubectl scale --replicas=3 <replica-set-name>
 
 ### Deployment
 
-TODO
+Deployment is a kubernetes object that comes higher than POD and ReplicaSet in the hierarchy. The deployment provides us with capabilities to upgrade the underlying instances seamlessly using rolling updates, undo changes, and pause and resume changes to deployments.
+
+<img src="images/deployment_1.PNG" width="100%">
+
+
 
 
