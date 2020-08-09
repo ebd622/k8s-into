@@ -122,7 +122,7 @@ So far there hasn’t been much of a difference between replicaset and deploymen
 
 ##### Rollback
 
-<img src="images/rollback.PNG" width="100%">
+<img src="images/rollback.png" width="100%">
 
 
 
