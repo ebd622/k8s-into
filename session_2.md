@@ -131,7 +131,24 @@ kubectl rollout history <deployment-name>
 
 ##### Deployment Strategy
 
+ There are two types of deployment strategies:
+ * Recreate
+ * Rolling update
+
 <img src="images/deployment_4.PNG" width="100%">
+
+###### Recreate
+ 
+The first strategy is to destroy all the old application instances and then create newer versions of application instances. Meaning first, destroy, for example, the 5 running instances and then deploy 5 new instances of the new application version. 
+
+The problem with this as you can imagine, is that during the period after the older versions are down and before any newer version is up, the application is down and inaccessible to users. This strategy is known as the **Recreate** strategy, and this is NOT the *default* deployment strategy. 
+
+###### Rolling update
+
+The second strategy is were we do not destroy all of them at once. Instead we take down the older version and bring up a newer version one by one. This way the application never goes down and the upgrade is seamless.
+
+if you do not specify a strategy while creating the deployment, it will assume it to be Rolling Update. In other words, RollingUpdate is the default Deployment Strategy.
+
 
 
 ##### Upgrades
