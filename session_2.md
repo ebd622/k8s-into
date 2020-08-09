@@ -1,8 +1,8 @@
-## Kubernetes Controllers and Deployment
+# Kubernetes Controllers and Deployment
 
 Kubernetes Controllers are the brain behind Kubernetes. Controllers are processes that monitor kubernetes objects and respond accordingly. Let's consider one controller in particular - Replication Controller.
 
-### Replication Controller
+## Replication Controller
 
 Replication Controller is used to provide customers with
 
@@ -10,7 +10,7 @@ Replication Controller is used to provide customers with
 * Load Balancing and Scaling
 
 
-#### High Availability
+### High Availability
 
 When an application crashes for some reason the POD will fail. It means that users will no longer be able to access our application. To prevent users from losing access to our application, we would like to have more than one instance or POD running at the same time. 
 
@@ -23,7 +23,7 @@ Replica Controller works also for a single POD - if you have a single POD, the r
 Thus the replication controller ensures that the specified number of PODs are running at all times. Even if it’s just 1 or 100.
 
 
-#### Load Balancing and Scaling
+### Load Balancing and Scaling
 
 Another reason we need replication controller is to create multiple PODs to share the load across them. When the number of users increase we deploy additional POD to balance the load across the pods. 
 
@@ -34,7 +34,7 @@ If the demand further increases and If we were to run out of resources on the fi
 As you can see, the replication controller spans across multiple nodes in the cluster. It helps us balance the load across multiple pods on different nodes.
 
 
-#### ReplicaController vs ReplicaSet
+### ReplicaController vs ReplicaSet
 
 There are two similar terms: **Replication Controller** and **Replica Set**. Both have the same purpose but they are not the same. Replication
 Controller is the older technology that is being replaced by Replica Set. Replica set is the new recommended way to setup replication. 
@@ -48,7 +48,7 @@ A section "selector" is a required section for ReplicaSet. This is a major diffe
 The ReplicaSet selector also provides many other options for matching labels that were not available in a replication controller.
 
 
-#### Labels and Selectors
+### Labels and Selectors
 
 What is the deal with Labels and Selectors? Why do we label our PODs and objects in kubernetes? Let us look at a simple scenario. Say we deployed 3 instances of our frontend web application as 3 PODs:
 
@@ -65,7 +65,7 @@ We could now provide these labels as a filter for replicaset. Under the selector
 
 The same concept labels/selectors is used in many other places in Kubernetes.
 
-#### Scale
+### Scale
 
 How can we scale replicas? There are different ways to do this:
 
@@ -81,7 +81,7 @@ kubectl replace -f replica-definition.yml
 kubectl scale --replicas=3 <replica-set-name>
 ```
 
-### Deployments
+## Deployments
 
 Deployment is a kubernetes object that comes higher than POD and ReplicaSet in the hierarchy. The deployment provides us with capabilities to upgrade the underlying instances seamlessly using rolling updates, undo changes, and pause and resume changes to deployments.
 
@@ -96,7 +96,7 @@ The following use cases are described in details in the [Kubernetes documentatio
 * Pause the Deployment to apply multiple fixes to its PodTemplateSpec and then resume it to start a new rollout. Use the status of the Deployment as an indicator that a rollout has stuck.
 * Clean up older ReplicaSets that you don't need anymore.
 
-##### Create Deployment
+### Create Deployment
 The deployment definition file is very similar to ReplicaSet, just replace "ReplicaSet" with "Deployment":
 
 <img src="images/deployment_2.PNG" width="100%">
@@ -104,7 +104,7 @@ The deployment definition file is very similar to ReplicaSet, just replace "Repl
 So far there hasn’t been much of a difference between replicaset and deployments, except for the fact that deployments created a new kubernetes object. We will see how to take advantage of the deployment later.
 
 
-##### Rollout and Versioning
+### Rollout and Versioning
 
 Let’s look into Rollouts and Versioning in a deployment. 
 
@@ -129,7 +129,7 @@ To see the revisions and history of rollout run the command:
 kubectl rollout history <deployment-name>
 ```
 
-##### Deployment Strategy
+### Deployment Strategy
 
  There are two types of deployment strategies:
  * Recreate
@@ -137,13 +137,13 @@ kubectl rollout history <deployment-name>
 
 <img src="images/deployment_4.PNG" width="100%">
 
-###### Recreate
+#### Recreate
  
 The first strategy is to destroy all the old application instances and then create newer versions of application instances. Meaning first, destroy, for example, the 5 running instances and then deploy 5 new instances of the new application version. 
 
 The problem with this as you can imagine, is that during the period after the older versions are down and before any newer version is up, the application is down and inaccessible to users. This strategy is known as the **Recreate** strategy, and this is NOT the *default* deployment strategy. 
 
-###### Rolling update
+#### Rolling update
 
 The second strategy is were we do not destroy all of them at once. Instead we take down the older version and bring up a newer version one by one. This way the application never goes down and the upgrade is seamless.
 
@@ -151,13 +151,13 @@ if you do not specify a strategy while creating the deployment, it will assume i
 
 
 
-##### Upgrades
+### Upgrades
 
 <img src="images/upgrades.PNG" width="100%">
 
 
 
-##### Rollback
+### Rollback
 
 <img src="images/rollback.png" width="100%">
 
