@@ -104,6 +104,27 @@ The deployment definition file is very similar to ReplicaSet, just replace "Repl
 So far there hasn’t been much of a difference between replicaset and deployments, except for the fact that deployments created a new kubernetes object. We will see how to take advantage of the deployment later.
 
 
+##### Rollout and Versioning
+
+<img src="images/deployment_3.PNG" width="100%">
+
+
+##### Deployment Strategy
+
+<img src="images/deployment_4.PNG" width="100%">
+
+
+##### Upgrades
+
+<img src="images/upgrades.PNG" width="100%">
+
+
+
+##### Rollback
+
+<img src="images/rollback.PNG" width="100%">
+
+
 
 
 
