@@ -168,6 +168,16 @@ kubectl set image <deployment-name> deployment nginx=nginx:1.9.1
 kubectl edit deployment <deployment-name>
 ```
 
+The difference between the recreate and rollingupdate strategies can also be seen when you view the deployments in detail. Run the command to see detailed information regarding the deployments: 
+
+```
+kubectl describe deployment <deployment-name>
+```
+
+You will notice when the Recreate strategy was used the events indicate that the old replicaset was scaled down to 0 first and the new replica set scaled up to 5. 
+
+However when the RollingUpdate strategy was used the old replica set was scaled down one at a time simultaneously scaling up the new replica set one at a time.
+
 
 
 ### Upgrades
