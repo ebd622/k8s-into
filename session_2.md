@@ -106,8 +106,28 @@ So far there hasn’t been much of a difference between replicaset and deploymen
 
 ##### Rollout and Versioning
 
+Let’s look into Rollouts and Versioning in a deployment. 
+
 <img src="images/deployment_3.PNG" width="100%">
 
+Whenever you create a new deployment or upgrade the images in an existing deployment it triggers a Rollout. A **rollout** is the process of
+deploying or upgrading your application containers. When you first create a deployment, it triggers a rollout. 
+
+A new rollout creates a new Deployment revision (let’s call it Revision 1). In the future when the application is upgraded – a new rollout is triggered and a new deployment revision is created - Revision 2. 
+
+This helps us keep track of the changes made to our deployment and enables us to rollback to a previous version of deployment if necessary.
+
+To see the status of your rollout - run the command:
+
+```
+kubectl rollout status <deployment-name>
+```
+
+To see the revisions and history of rollout run the command:
+
+```
+kubectl rollout history <deployment-name>
+```
 
 ##### Deployment Strategy
 
