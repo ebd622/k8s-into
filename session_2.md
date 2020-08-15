@@ -16,13 +16,13 @@ Services help us to connect kubernetes applications together or with the users.
 
 ### Service NodePort
 
-<img src="images/serv4.PNG" width="60%">
+<img src="images/serv4.PNG" width="80%">
 
 
-<img src="images/serv5.PNG" width="60%">
+<img src="images/serv5.PNG" width="80%">
 
 
-<img src="images/serv6.PNG" width="60%">
+<img src="images/serv6.PNG" width="80%">
 
 
 
