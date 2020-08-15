@@ -8,6 +8,41 @@ Services help us to connect kubernetes applications together or with the users.
 <img src="images/serv1.PNG" width="80%">
 
 
+<img src="images/serv2.PNG" width="80%">
+
+
+<img src="images/serv3.PNG" width="80%">
+
+
+<img src="images/serv4.PNG" width="80%">
+
+
+<img src="images/serv5.PNG" width="80%">
+
+
+<img src="images/serv6.PNG" width="80%">
+
+
+
+<img src="images/serv7.PNG" width="80%">
+
+
+
+<img src="images/serv8.PNG" width="80%">
+
+
+
+<img src="images/serv9.PNG" width="80%">
+
+
+
+<img src="images/serv10.PNG" width="80%">
+
+
+
+<img src="images/serv11.PNG" width="80%">
+
+
 ## Replication Controller
 
 Replication Controller is used to provide customers with
