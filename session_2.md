@@ -3,7 +3,10 @@
 Kubernetes Controllers are the brain behind Kubernetes. Controllers are processes that monitor kubernetes objects and respond accordingly. Let's consider one controller in particular - Replication Controller.
 
 ## Services
-TODO
+Services help us to connect kubernetes applications together or with the users. 
+
+<img src="images/serv1.PNG" width="80%">
+
 
 ## Replication Controller
 
