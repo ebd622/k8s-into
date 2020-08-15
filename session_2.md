@@ -1,6 +1,5 @@
 # Kubernetes Services, Controllers and Deployment
 
-Kubernetes Controllers are the brain behind Kubernetes. Controllers are processes that monitor kubernetes objects and respond accordingly. Let's consider one controller in particular - Replication Controller.
 
 ## Services
 Services help us to connect kubernetes applications together with other applications users. 
@@ -50,6 +49,8 @@ The services enable [loose coupling](https://www.linkedin.com/pulse/loose-coupli
 
 
 ## Replication Controller
+
+Kubernetes Controllers are the brain behind Kubernetes. Controllers are processes that monitor kubernetes objects and respond accordingly. Let's consider one controller in particular - Replication Controller.
 
 Replication Controller is used to provide customers with
 
