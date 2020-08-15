@@ -2,6 +2,9 @@
 
 
 ## Services
+
+According to the Kubernetes [documentation](https://kubernetes.io/docs/concepts/services-networking/service/) - a Service is an abstraction which defines a logical set of Pods and a policy by which to access them (sometimes this pattern is called a micro-service).
+
 Services help us to connect kubernetes applications together with other applications users. 
 
 <img src="images/serv1.PNG" width="80%">
