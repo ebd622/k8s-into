@@ -3,9 +3,13 @@
 Kubernetes Controllers are the brain behind Kubernetes. Controllers are processes that monitor kubernetes objects and respond accordingly. Let's consider one controller in particular - Replication Controller.
 
 ## Services
-Services help us to connect kubernetes applications together or with the users. 
+Services help us to connect kubernetes applications together with other applications users. 
 
 <img src="images/serv1.PNG" width="60%">
+
+For example, our application is a group of pods - front-end, back-end, DB. In Kubernetes world PODs don't communicate directly to each other, services are used for this.
+The services enable [loose coupling](https://www.linkedin.com/pulse/loose-coupling-microservice-architecture-patrick-van-vuuren/) between micro-services in our application. 
+
 
 ### Use Case example
 <img src="images/serv2.PNG" width="60%">
