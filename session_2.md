@@ -32,17 +32,17 @@ Services help us to connect kubernetes applications together or with the users.
 
 <img src="images/serv8.PNG" width="60%">
 
-
+### Service NodePort
 
 <img src="images/serv9.PNG" width="60%">
 
 
 
-<img src="images/serv10.PNG" width="60%">
+<img src="images/serv10.PNG" width="80%">
 
 
 
-<img src="images/serv11.PNG" width="60%">
+<img src="images/serv11.PNG" width="80%">
 
 
 ## Replication Controller
