@@ -66,6 +66,12 @@ This is where a Kubernetes Service comes to help. A Service listens a request on
 
 <img src="images/serv4.PNG" width="80%">
 
+* Node, Service and POD have their own IP addresses;
+* Service forwards requests to the TargerPort (80);
+* NodePort (30008) is used to access the web-service externally; 
+* In a service-definition file: if targetPort is not provided - it is assumed to be the same as a port;
+* In a service-definition file: if **nodePort** is not provided - a  free port in a (range 30000-32767) will be automatically allocated;
+
 
 <img src="images/serv5.PNG" width="80%">
 
