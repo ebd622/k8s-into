@@ -83,6 +83,16 @@ As any Kuberneted object, a service can be created with a definition file (decla
 
 #### Commands to create, get and request a service
 
+Create a service from a definition-file:
+```
+kubectl create -f service-definition.yaml
+```
+
+Get created services:
+```
+kubectl get services
+```
+
 <img src="images/serv6.PNG" width="80%">
 
 1. Link a service to a POD;
