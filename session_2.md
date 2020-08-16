@@ -16,10 +16,39 @@ The services enable [loose coupling](https://www.linkedin.com/pulse/loose-coupli
 ### Use Case example
 
 Let's look at one use case for the services.
+
 We deployed our web-application as POD to a cluster - how can an external user can access a page?
 
 <img src="images/serv2.PNG" width="60%">
 
+
+The existing setup:
+* A cloud has one node with the IP 192.168.1.2;
+* A user laptop is on the same network and has IP  192.168.1.10;
+* The internal POD network is in the range 10.244.0.0;
+* The POD is IP 10.244.0.2;
+
+It is not possible to access (ping) the POD from the user's laptop because they are in different networks.
+
+What are the options to see the web-page?
+
+It is possible to SSH from the laptop to the Node and run access the POD **from the Node** like this:
+
+```
+curl http://10.244.0.2
+```
+
+This will work but this is not what we really want.
+
+We want to access the POD directly from the laptop running the command like this:
+
+```
+curl http://192.168.1.2
+```
+
+So, we need something that will help us to access the **POD through the Node** from the laptop. 
+
+This is where a Kubernetes Service comes to help. A Service listens a request on a Node-port and forward the request to a POD. This type service called **NodePort**
 
 
 ### Services Types
