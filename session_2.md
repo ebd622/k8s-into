@@ -81,15 +81,27 @@ As any Kuberneted object, a service can be created with a definition file (decla
 * Services CANNOT connect to PODs via POD-IP addresses (because POD-IPs are not static and changed every time when POD is created and destroyed);
 * Services are connected to PODs via POD-labels (POD-labels are still the same when POD is created/deleted);
 
-
+#### Commands to create, get and request a service
 
 <img src="images/serv6.PNG" width="80%">
 
+1. Link a service to a POD;
+2. See that a service has been created;
+3. Request (externally) a web-service via a node-IP address (192.168.1.2)
 
+
+Service can be mapped NOT only to one POD. There are different cases:
+* Service is mapped to one POD (the example above);
+* Service is mapped to **many PODs** running on **the same Node**;
+* Service is mapped to **many PODs** running on **different Nodes**;
+
+#### Service is mapped to many PODs running on the same Node:
 
 <img src="images/serv7.PNG" width="60%">
 
 
+
+#### Service is mapped to many PODs running on different Nodes
 
 <img src="images/serv8.PNG" width="60%">
 
