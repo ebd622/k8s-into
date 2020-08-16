@@ -74,6 +74,8 @@ This is where a Kubernetes Service comes to help. A Service listens a request on
 
 #### Create a service
 
+As any Kuberneted object, a service can be created with a definition file (declarative way):
+
 <img src="images/serv5.PNG" width="80%">
 
 * Services CANNOT connect to PODs via POD-IP addresses (because POD-IPs are not static and changed every time when POD is created and destroyed);
