@@ -14,7 +14,13 @@ The services enable [loose coupling](https://www.linkedin.com/pulse/loose-coupli
 
 
 ### Use Case example
+
+Let's look at one use case for the services.
+We deployed our web-application as POD to a cluster - how can an external user can access a page?
+
 <img src="images/serv2.PNG" width="60%">
+
+
 
 ### Services Types
 
