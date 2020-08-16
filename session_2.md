@@ -123,6 +123,12 @@ This is use case example:
 
 <img src="images/serv8.PNG" width="60%">
 
+* Kubernetes automatically creates a service that spreads across all the nodes in a cluster and maps targetPort-s in PODs to the same service port;
+* In that way you can access an application using an IP of any node in a cluster and using the same port (in the example it is 3008);
+* When PODs are created/deleted a service is automatically updated;
+* Normally when a service once created you don’t have to do anything with it; 
+
+
 ### Service NodePort
 
 <img src="images/serv9.PNG" width="60%">
