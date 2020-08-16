@@ -105,6 +105,7 @@ Service can be mapped NOT only to one POD. There are different cases:
 * Service is mapped to **many PODs** running on **the same Node**;
 * Service is mapped to **many PODs** running on **different Nodes**;
 
+
 #### Service is mapped to many PODs running on the same Node
 
 This is use case example:
