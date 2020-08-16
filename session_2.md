@@ -72,8 +72,13 @@ This is where a Kubernetes Service comes to help. A Service listens a request on
 * In a service-definition file: if targetPort is not provided - it is assumed to be the same as a port;
 * In a service-definition file: if **nodePort** is not provided - a  free port in a (range 30000-32767) will be automatically allocated;
 
+#### Create a service
 
 <img src="images/serv5.PNG" width="80%">
+
+* Services CANNOT connect to PODs via POD-IP addresses (because POD-IPs are not static and changed every time when POD is created and destroyed);
+* Services are connected to PODs via POD-labels (POD-labels are still the same when POD is created/deleted);
+
 
 
 <img src="images/serv6.PNG" width="80%">
