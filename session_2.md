@@ -19,7 +19,7 @@ Let's look at one use case for the services.
 
 We deployed our web-application as POD to a cluster - how can an external user can access a page?
 
-<img src="images/serv2.PNG" width="60%">
+<img src="images/serv2_0.PNG" width="60%">
 
 
 The existing setup:
@@ -47,6 +47,8 @@ curl http://192.168.1.2
 ```
 
 So, we need something that will help us to access the **POD through the Node** from the laptop. 
+
+<img src="images/serv2.PNG" width="60%">
 
 This is where a Kubernetes Service comes to help. A Service listens a request on a Node-port and forward the request to a POD. This type service called **NodePort**
 
