@@ -35,6 +35,7 @@ What are the options to see the web-page?
 It is possible to SSH from the laptop to the Node and run access the POD **from the Node** like this:
 
 ```
+ssh 192.168.1.2
 curl http://10.244.0.2
 ```
 
