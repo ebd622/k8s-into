@@ -58,6 +58,10 @@ This is where a Kubernetes Service comes to help. A Service listens a request on
 
 <img src="images/serv3.PNG" width="60%">
 
+* *NodePort*: the service makes an **internal port of POD** available on a **Node**;
+* *ClusterIP*: a service creates a virtual IP inside a cluster to enable communication of different services (such as set of front-end servers to a set of back-end servers);
+* *LoadBalancer*: it provides a load-balancing for an application in supported cloud providers;
+
 ### Service NodePort
 
 <img src="images/serv4.PNG" width="80%">
