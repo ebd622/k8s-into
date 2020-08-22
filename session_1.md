@@ -496,4 +496,4 @@ kubectl delete secret <secret-name>
 
 4. Check logs of the created POD
 
-5. Run "bash" or "/bin/sh" on the reated POD (use "kubectl exec -it ...")
+5. Run "bash" or "/bin/sh" on the çreated POD (use "kubectl exec -it ...")
