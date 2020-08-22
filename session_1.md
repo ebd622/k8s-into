@@ -483,13 +483,17 @@ kubectl delete secret <secret-name>
 
 ## Hands-on exercise
 
-1. Create a POD with the following specification:
+1. Create a POD using a manifest with the following specification:
 
-- POD name: nginx1
-- Image: nginx
+    - POD name: nginx1
+    - Image: nginx
 
-2. Check the status of the created ("get", "describe"):
+2. Check the status of the created pod ("get", "describe"):
 
-- Wait till the status will be "running"
+    - Wait till the status will be "running"
 
 3. Check the labels (use "-show-labels")
+
+4. Check logs of the created POD
+
+5. Run "bash" or "/bin/sh" on the reated POD (use "kubectl exec -it ...")
