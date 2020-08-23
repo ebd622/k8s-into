@@ -366,10 +366,19 @@ Here we see the old replicaset with 0 PODs and the new replicaset with 5 PODs.
 
 ### Rollback
 
+Kubernetes deployments allow to rollback to a previous revision. 
+
 <img src="images/rollback.png" width="100%">
 
+To undo a change run the command:
+
+```
+kubectl rollout undo <deployment-name>
+```
+
+The deployment will then destroy the PODs in the new replicaset and bring the older ones up in the old replicaset . And your application is back to its older format.
 
 
-
+When you compare the replicasets before and after the rollback, you will be able to notice the difference. Before the rollback the first replicaset had 0 PODs and the new replicaset had 5 PODs and this is reversed after the rollback is finished.
 
 
