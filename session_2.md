@@ -129,7 +129,9 @@ This is use case example:
 * Normally when a service once created you don’t have to do anything with it; 
 
 
-### Service NodePort
+### Service CLusterIP
+
+ClusterIP services provide a single interface to communicate one **group of PODs** with **another group** (can be also one-to-one POD)
 
 <img src="images/serv9.PNG" width="60%">
 
