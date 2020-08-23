@@ -163,6 +163,9 @@ kubectl expose pod nginx --port=90 --target-port=80 --type=ClusterIP
 ```
 * **type** is a type service (ClusterIP, NodePort or LoadBalancer). Default type is ClusterIP
 
+More details regarding the "expose" command can be found in the [documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#expose).
+
+
 
 ## Replication Controller
 
