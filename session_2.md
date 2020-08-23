@@ -131,15 +131,22 @@ This is use case example:
 
 ### Service CLusterIP
 
-ClusterIP services provide a single interface to communicate one **group of PODs** with **another group** (can be also one-to-one POD)
+ClusterIP services provide a single interface to communicate one **group of PODs** with **another group** (can be also one-to-one POD):
 
 <img src="images/serv9.PNG" width="60%">
 
+#### Defifnition file
 
+Here is the example of the ClusterIP service definition file:
 
 <img src="images/serv10.PNG" width="80%">
 
+* **targerPort** - is a port where back-end is exposed;
+* **port** - is a port where service is exposed; 
+* for linking a service to a set of PODs we use selectors (labels in a POD);
 
+
+#### Create and check
 
 <img src="images/serv11.PNG" width="80%">
 
