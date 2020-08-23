@@ -349,8 +349,19 @@ However when the RollingUpdate strategy was used the old replica set was scaled 
 
 ### Upgrades
 
+Let’s look at how a deployment performs an upgrade under the hoods. 
+
+When you upgrade your application the kubernetes deployment object creates a **NEW replicaset** under the hoods and starts deploying the containers there. At the same time taking down the PODs in the old replica set following a RollingUpdate strategy.
+
 <img src="images/upgrades.PNG" width="100%">
 
+This can be seen when you try to list the replicasets using the command: 
+
+```
+kubectl get replicasets 
+```
+
+Here we see the old replicaset with 0 PODs and the new replicaset with 5 PODs.
 
 
 ### Rollback
