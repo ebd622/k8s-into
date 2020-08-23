@@ -148,7 +148,20 @@ Here is the example of the ClusterIP service definition file:
 
 #### Create and check
 
+The following command is used to create a service from a definition-file (i.e from a manifest):
+
+```
+kubectl create -f service-definition.yaml
+```
+
 <img src="images/serv11.PNG" width="80%">
+
+It is also possible to create a service exposing  a running pod with the command:
+
+```
+kubectl expose pod nginx --port=90 --target-port=80 --type=ClusterIP
+```
+* **type** is a type service (ClusterIP, NodePort or LoadBalancer). Default type is ClusterIP
 
 
 ## Replication Controller
