@@ -347,10 +347,16 @@ Get extended info about PODs created in the default namespace:
 kubectl get pod -o wide
 ```
 
-Get details about a particular by its name
+Get details about a particular by its name:
 
 ```
 kubectl describe pod <pod-name>
+```
+
+Get all labels in a POD:
+
+```
+kubectl get pod <pod-name> --show-labels
 ```
 
 
@@ -493,7 +499,7 @@ kubectl delete secret <secret-name>
 
     - Wait till the status will be "running"
 
-3. Check the labels (use "-show-labels")
+3. Check the labels (use "--show-labels")
 
 4. Check logs of the created POD
 
