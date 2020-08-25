@@ -481,7 +481,8 @@ kubectl delete secret <secret-name>
 
 
 
-## Hands-on exercise
+## Hands-on exercises
+### Play with PODs
 
 1. Create a POD using a manifest with the following specification:
 
@@ -497,3 +498,15 @@ kubectl delete secret <secret-name>
 4. Check logs of the created POD
 
 5. Run "bash" or "/bin/sh" on the çreated POD (use "kubectl exec -it ...")
+
+### Create ConfigMaps and Secrets
+
+TODO
+
+
+### Configure  PODs to Use ConfigMaps and Secrets
+
+TODO
+
+
+
