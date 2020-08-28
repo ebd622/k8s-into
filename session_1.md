@@ -521,8 +521,23 @@ kubectl delete secret <secret-name>
 
 ### Create ConfigMaps and Secrets
 
-TODO
+1. Create a config-map named my-config with the following key/values:
 
+   - *key1:* `value1` 
+   - *key2:* `value3` 
+   - *key3:* `value3` 
+
+2. Check the created config-map (use "get", "describe")
+
+3. Create a secret named my-secret with the following values:
+
+   - *user_name:* `user1` 
+   - *password:* `mypasswd` 
+   - *db_name:* `db1` 
+
+4. Check the created secret (use "get", "describe")
+
+	- Notice a difference between the config-map and the secret when you get info about them
 
 ### Configure  PODs to Use ConfigMaps and Secrets
 
