@@ -541,7 +541,12 @@ kubectl delete secret <secret-name>
 
 ### Configure  PODs to Use ConfigMaps and Secrets
 
-TODO
+1. Create a POD with the image `nginx` and configure created config-map and secret in the POD as environment variables;
 
+2. Check the created pod (use "get" and "describe");
+
+3. Check the configured env-variables in the POD (use the "exec" command);
+
+4. Delete the created POD, config-map and secret.
 
 
