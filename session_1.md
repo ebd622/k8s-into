@@ -505,6 +505,20 @@ kubectl delete secret <secret-name>
 
 5. Run "bash" or "/bin/sh" on the created POD (use "kubectl exec -it ...")
 
+6. Create another POD with the following specification (the tag 1.7.99 doesn't exist, you should get an error message):
+
+   - *POD name:* `nginx2` 
+   - *Image:* `nginx:1.7.99`
+   
+   Use a command to create the POD.
+
+7. Check the status of the pod ("get", "describe"):
+
+   - What is the error message that you got?
+
+8. Delete both pods
+
+
 ### Create ConfigMaps and Secrets
 
 TODO
