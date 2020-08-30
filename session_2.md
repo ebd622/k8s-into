@@ -381,4 +381,11 @@ The deployment will then destroy the PODs in the new replicaset and bring the ol
 
 When you compare the replicasets before and after the rollback, you will be able to notice the difference. Before the rollback the first replicaset had 0 PODs and the new replicaset had 5 PODs and this is reversed after the rollback is finished.
 
+## Hands-on exercises
+### Play with Services
+TODO
+
+### Play with Deployments
+TODO
+
 
