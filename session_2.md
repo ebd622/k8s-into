@@ -385,7 +385,7 @@ When you compare the replicasets before and after the rollback, you will be able
 ### Play with Services
 TODO
 
-### Play with Deployments
+### Create Deployments
 TODO
 
 
