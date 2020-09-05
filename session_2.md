@@ -383,7 +383,13 @@ When you compare the replicasets before and after the rollback, you will be able
 
 ## Hands-on exercises
 ### Play with Services
-TODO
+1. Create a POD using a manifest with the following specification:
+
+   - *POD name:* `nginx1` 
+   - *Image:* `nginx`
+
+2. Check the status of the created pod ("get", "describe"):
+
 
 ### Create Deployments
 TODO
