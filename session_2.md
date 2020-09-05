@@ -392,17 +392,16 @@ When you compare the replicasets before and after the rollback, you will be able
 
    - Wait till the status will be "running"
 
-3. Create a NodePort service and expose the created POD to a port 30856
+3. Create a `NodePort` service and expose the created POD to a port `30856`
 
 
-4. Make a call to the POD via the port 30856 from your browser:
+4. Make a call to the POD via the port `30856` from your browser:
 
 	```
 	http://192.168.99.100:30856/
 	```
 
 
-### Create Deployments
-TODO
 
+### Create Deployments
 
