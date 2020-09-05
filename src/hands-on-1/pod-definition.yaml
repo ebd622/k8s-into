@@ -8,3 +8,8 @@ spec:
   containers:
   - image: nginx
     name: my-nginx
+    envFrom:
+      - configMapRef:
+           name: app-config
+      - secretRef:
+           name: app-secret
