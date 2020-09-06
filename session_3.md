@@ -1,4 +1,4 @@
-# Kubernetes Services, Controllers and Deployment
+# Controllers and Deployment
 
 ## Replication Controller
 
