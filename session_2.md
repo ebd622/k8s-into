@@ -165,6 +165,14 @@ kubectl expose pod nginx --port=90 --target-port=80 --type=ClusterIP
 
 More details regarding the "expose" command can be found in the [documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#expose).
 
+## Examples
+
+### ClusterIP service
+TODO
+
+### NodePort service
+TODO
+
 
 ## Hands-on exercises
 ### Play with Services
@@ -188,5 +196,5 @@ More details regarding the "expose" command can be found in the [documentation](
 
 
 
-### Create Deployments
+
 
