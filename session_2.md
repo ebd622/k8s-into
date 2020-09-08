@@ -168,7 +168,54 @@ More details regarding the "expose" command can be found in the [documentation](
 ## Examples
 
 ### ClusterIP service
-TODO
+
+1. Create a POD with the image `nginx`:
+
+```
+kubectl run nginx --image=nginx
+```
+
+2. Check the created pod (use `kubectl get ...`, `kubectl describe ...`)
+
+3. Create a POD with the image `busybox` and run there the command `sleep 3600`:
+
+```
+kubectl run busybox --image=busybox -it --restart=Never --  bin/sh -c 'sleep 3600'
+```
+
+4. Check the created pod;
+5. Try to `curl ...` the POD `nginx` via its IP from the host (your PC);
+6. Run `bin/sh` in the POD `busybox`:
+
+```
+kubectl exec -it busybox -- bin/sh
+```
+7. Try to `wget ...` the POD `nginx` via its IP from the POD `busybox`
+8. Go back to the host machine;
+9. Expose the POD `nginx` to the port 90:
+
+```
+k expose po nginx --name=ngninx-srv --port=90 --target-port=80
+```
+10. Run `bin/sh` again in the POD `busybox`:
+
+```
+kubectl exec -it busybox -- bin/sh
+```
+
+11. Try to `wget ...` the POD `nginx` via the service-name and port=90 from the POD `busybox`:
+
+```
+wget -O- nginx-srv:90
+```
+
+12 ssh to the minikube cluster:
+
+```
+minikube ssh
+```
+
+13 Try to `curl ...` the POD `nginx` via its IP and the service name
 
 ### NodePort service
 TODO
