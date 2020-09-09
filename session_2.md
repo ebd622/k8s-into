@@ -209,13 +209,15 @@ kubectl exec -it busybox -- bin/sh
 wget -O- nginx-srv:90
 ```
 
-12 ssh to the minikube cluster:
+12. ssh to the minikube cluster:
 
 ```
 minikube ssh
 ```
 
-13 Try to `curl ...` the POD `nginx` via its IP and the service name
+13. Try to `curl ...` the POD `nginx` via its IP and the service name
+
+14. Delete the service and the POD `busybox`
 
 ### NodePort service
 TODO
