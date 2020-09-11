@@ -220,6 +220,13 @@ minikube ssh
 14. Delete the service and the POD `busybox`
 
 ### NodePort service
+1. Create a POD with the image `nginx` (is it is not created yet):
+
+```
+kubectl run nginx --image=nginx
+```
+2.
+
 TODO
 
 
