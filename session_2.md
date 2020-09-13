@@ -281,16 +281,9 @@ minikube ssh
 
    - Wait till the status will be "running"
 
-3. Create a `NodePort` service and expose the created POD to a port `30856`
-
-
-4. Make a call to the POD via the port `30856` from your browser:
-
-	```
-	http://192.168.99.100:30856/
-	```
-
-
-
-
-
+3. Expose the created POD as a ClusterIP-service via the port 99;
+4. Check the created service;
+5. Created a new POD with the image `busybox` and the the created service;
+6. Expose the POD as a NodePort-service;
+7. Check the created service and notice an assigned NodePort;
+8. Make a call to the POD from a browser via the NodePort
