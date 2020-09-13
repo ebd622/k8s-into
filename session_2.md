@@ -204,6 +204,7 @@ winpty kubectl exec -it busybox -- bin/sh
 ```
 k expose po nginx --name=ngninx-srv --port=90 --target-port=80
 ```
+
 10. Run `bin/sh` again in the POD `busybox`:
 
 ```
