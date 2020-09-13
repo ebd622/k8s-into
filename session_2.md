@@ -190,6 +190,13 @@ kubectl run busybox --image=busybox -it --restart=Never --  bin/sh -c 'sleep 360
 ```
 kubectl exec -it busybox -- bin/sh
 ```
+If you run minikube in Windows than you may need to type `winpty` before `kubectl`. [Winpty](https://github.com/rprichard/winpty/) provides interface for communicating with Windows console programs:
+
+```
+winpty kubectl exec -it busybox -- bin/sh
+```
+
+
 7. Try to `wget ...` the POD `nginx` via its IP from the POD `busybox`
 8. Go back to the host machine;
 9. Expose the POD `nginx` to the port 90:
