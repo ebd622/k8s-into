@@ -230,12 +230,34 @@ minikube ssh
 ### NodePort service
 1. Create a POD with the image `nginx` (if it is not created yet):
 
-```
-kubectl run nginx --image=nginx
-```
-2.
+	```
+	kubectl run nginx --image=nginx
+	```
+2. Check the created POD  (use `kubectl get ...`, `kubectl describe ...`)
+3. Expose the POD as a NodePort service (either declarative or imperative way):
+	
+    Genetate yaml to use it for declarative way:
+    
+    ```
+    kubectl expose pod nginx --port=90 --target-port=80 --name=nginx-srv-np --type=NodePort -o yaml --dry-run
+    ```
+    
+	Expose the POD using an imperative way:
+    
+    ```
+    kubectl expose pod nginx --port=90 --target-port=80 --name=nginx-srv-np --type=NodePort
+    ```    
 
-TODO
+4. Check created services:
+
+	```
+	kubectl get services
+	```
+	or
+
+	```
+	kubectl get svc
+	```
 
 
 ## Hands-on exercises
