@@ -248,7 +248,7 @@ minikube ssh
     kubectl expose pod nginx --port=90 --target-port=80 --name=nginx-srv-np --type=NodePort
     ```    
 
-4. Check created services:
+4. Check created service:
 
 	```
 	kubectl get services
@@ -258,6 +258,15 @@ minikube ssh
 	```
 	kubectl get svc
 	```
+    
+    Notice an assigned NodePort (it should be in the range 30000-32767)
+
+5. Make a request to the POD via created NodePort-servcie (assume the assinged port is 32132)
+
+	```
+	http://192.168.99.100:32132/
+	```
+
 
 
 ## Hands-on exercises
