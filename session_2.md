@@ -267,6 +267,7 @@ minikube ssh
 	http://192.168.99.100:32132/
 	```
 
+6. Clean up your environment (remove PODs and services that you created)
 
 
 ## Hands-on exercises
