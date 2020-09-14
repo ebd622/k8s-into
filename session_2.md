@@ -272,7 +272,7 @@ minikube ssh
 
 ## Hands-on exercises
 ### Play with Services
-1. Create a POD using a manifest with the following specification:
+1. Create a POD using a with the following specification (use either declarative or imperative way):
 
    - *POD name:* `nginx1` 
    - *Image:* `nginx`
@@ -283,7 +283,10 @@ minikube ssh
 
 3. Expose the created POD as a ClusterIP-service via the port 99;
 4. Check the created service;
-5. Created a new POD with the image `busybox` and the the created service;
+5. Created a new POD with the image `busybox` (like described in the examples above);
+6. Run `bin/sh` in the POD `busybox`;
+7. In the `busybox` POD run `wget ...` to make a call to the `nginx` POD via created ClusterIP-service;
+8. Go back to the host-machine;
 6. Expose the POD as a NodePort-service;
 7. Check the created service and notice an assigned NodePort;
 8. Make a call to the POD from a browser via the NodePort
