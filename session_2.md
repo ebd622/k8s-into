@@ -115,7 +115,7 @@ This is use case example:
 * Service is mapped to PODs via labels during creation of a service;
 * Service automatically selects three pods as end-points to forward requests coming from users;
 * you don’t need to make any additional configuration to make this happen!
-* Service use a random algorithm to select a POD to forward requests;
+* Service uses a random algorithm to select a POD to forward requests;
 * Here service is running as a load balancer to distribute load across different PODs;
 
 
