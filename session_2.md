@@ -202,7 +202,7 @@ winpty kubectl exec -it busybox -- bin/sh
 9. Expose the POD `nginx` to the port 90:
 
 ```
-k expose po nginx --name=ngninx-srv --port=90 --target-port=80
+kubectl expose po nginx --name=nginx-srv --port=90 --target-port=80
 ```
 
 10. Run `bin/sh` again in the POD `busybox`:
