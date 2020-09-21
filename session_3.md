@@ -220,22 +220,57 @@ The deployment will then destroy the PODs in the new replicaset and bring the ol
 When you compare the replicasets before and after the rollback, you will be able to notice the difference. Before the rollback the first replicaset had 0 PODs and the new replicaset had 5 PODs and this is reversed after the rollback is finished.
 
 ## Hands-on exercises
-### Play with Services
-1. Create a POD using a manifest with the following specification:
+1. Create a new deployment:
 
-   - *POD name:* `nginx1` 
-   - *Image:* `nginx`
+```
+kubectl create deployment my-dep --image=nginx
+```
+2. Check the created deployment (use the commands "get" and "describe")
 
-2. Check the status of the created pod ("get", "describe"):
+3. Check replicas and PODs;
 
-   - Wait till the status will be "running"
+4. Scale replicas up to 3
+```
+kubectl scale --replicas=3 deploy/my-dep
+```
+5. Check number of running pods
 
-3. Create a `NodePort` service and expose the created POD to a port `30856`
+6. Check the rollout status of the deployment:
+```
+kubectl rollout status deployment/my-dep
+```
 
+7. Check the rollout history of the deployment:
+```
+kubectl rollout history deployment/my-dep
+```
 
-4. Make a call to the POD via the port `30856` from your browser:
+8. Set a new image for the deployment:
+```
+kubectl set image deploy/my-dep nginx=nginx:1.9.1
+```
 
-	```
-	http://192.168.99.100:30856/
-	```
+9. Check the rollout status, history. 
 
+10. Check the deployment to see it the new image has been applied 
+```
+kubectl describe deployment my-dep
+```
+
+11. Update the deployment with a wrong image:
+```
+kubectl set image deploy/my-dep nginx=nginx:1.9.99
+```
+
+12. Check the replicas, deployment status, pods
+
+13. Check the rollout history
+
+14. Undo the last deployment with a wrong image:
+```
+kubectl rollout undo deploy/my-dep
+```
+
+15. Check the rollout history
+
+16. Check the replicas, deployment, pods
