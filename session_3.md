@@ -153,7 +153,7 @@ There are a few ways to update a deployment:
 * Modify a deployment-definition yaml-file and the command:
 
 ```
-kubectl apply f deployment-definition.yml
+kubectl apply -f deployment-definition.yml
 ```
 
 * Run the command to set a new image:
