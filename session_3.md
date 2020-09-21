@@ -101,6 +101,11 @@ The deployment definition file is very similar to ReplicaSet, just replace "Repl
 
 <img src="images/deployment_2.PNG" width="100%">
 
+It is also possible to creare a deployment with the command like this:
+```
+kubectl create deployment <deploymnt-name> --image=<image>
+```
+
 So far there hasn’t been much of a difference between replicaset and deployments, except for the fact that deployments created a new kubernetes object. We will see how to take advantage of the deployment later.
 
 
