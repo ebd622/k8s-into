@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: p-name
+  name: p-name
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      run: p-name
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: p-name
+    spec:
+      containers:
+      - args:
+        - mvn
+        - clean
+        - spring-boot:run
+        image: ebd622/pod-name:0.0.2
+        name: p-name
+        resources: {}
+status: {}
