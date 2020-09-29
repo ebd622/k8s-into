@@ -43,7 +43,7 @@ This is how a ReplicaSet is created:
 
 <img src="images/RC_3.PNG" width="40%">
 
-A section "selector" is a required section for ReplicaSet. This is a major difference between Replication Controller and Replica Set - in Replication Controller the section "selector" is NOT required but still available.PODs.
+A section "selector" is a required section for ReplicaSet. This is a major difference between Replication Controller and Replica Set - in Replication Controller the section "selector" is NOT required but still available.
 
 The ReplicaSet selector also provides many other options for matching labels that were not available in a replication controller.
 
