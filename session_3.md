@@ -31,7 +31,7 @@ If the demand further increases and If we are run out of resources on the first 
 
 <img src="images/RC_2.PNG" width="80%">
 
-As you can see, the replication controller spans across multiple nodes in the cluster. It helps us balance the load across multiple pods on different nodes.
+As you can see, the replication controller spans across multiple nodes in the cluster. It helps us to balance the load across multiple pods on different nodes.
 
 
 ### ReplicaController vs ReplicaSet
