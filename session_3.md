@@ -27,7 +27,7 @@ Thus the replication controller ensures that the specified number of PODs are ru
 
 Another reason we need replication controller is to create multiple PODs to share the load across them. When the number of users increase we deploy additional POD to balance the load across the pods. 
 
-If the demand further increases and If we were to run out of resources on the first node, we could deploy additional PODs across other nodes in the cluster. 
+If the demand further increases and If we are run out of resources on the first node, Kubernetes could deploy additional PODs across other nodes in the cluster. 
 
 <img src="images/RC_2.PNG" width="80%">
 
