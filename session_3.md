@@ -87,7 +87,7 @@ Deployment is a kubernetes object that comes higher than POD and ReplicaSet in t
 
 <img src="images/deployment_1.PNG" width="100%">
 
-The following use cases are described in details in the [Kubernetes documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#use-case):
+Below are the deployment use cases  described in details in the [Kubernetes documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#use-case):
 
 * Create a Deployment to rollout a ReplicaSet. The ReplicaSet creates Pods in the background. Check the status of the rollout to see if it succeeds or not.
 * Declare the new state of the Pods by updating the PodTemplateSpec of the Deployment. A new ReplicaSet is created and the Deployment manages moving the Pods from the old ReplicaSet to the new one at a controlled rate. Each new ReplicaSet updates the revision of the Deployment.
