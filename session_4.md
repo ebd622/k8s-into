@@ -29,3 +29,5 @@ curl -X POST http://192.168.99.100:31781 -d "vote=a"
 
 ## Steps
 TODO
+
+Worker app [java](https://github.com/dockersamples/example-voting-app/blob/master/worker/src/main/java/worker/Worker.java) version
