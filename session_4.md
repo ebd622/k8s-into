@@ -42,7 +42,20 @@ TODO
 #### 4. Create redis-deployment
 TODO
 
-
-
+#### 5. Create worker-app-deployment
+TODO
 
 Worker app [java](https://github.com/dockersamples/example-voting-app/blob/master/worker/src/main/java/worker/Worker.java) version
+
+#### 6. Create result-service
+
+#### 7. Create result-app-deployment
+
+#### 8. Create db service
+
+#### 9. Create postgres-deployment
+
+
+
+
+
