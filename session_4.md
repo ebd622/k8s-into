@@ -48,8 +48,10 @@ TODO
 Worker app [java](https://github.com/dockersamples/example-voting-app/blob/master/worker/src/main/java/worker/Worker.java) version
 
 #### 6. Create result-service
+TODO
 
 #### 7. Create result-app-deployment
+TODO
 
 #### 8. Create db service
 
