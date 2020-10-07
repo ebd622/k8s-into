@@ -31,10 +31,12 @@ curl -X POST http://192.168.99.100:31781 -d "vote=a"
 
 #### 1. Create voting-service
 - `name`: voting-service
-- type: NodePort
-- port: 80
-- targetPort: 80
-- nodePort: 31781
+- `type`: NodePort
+- `port`: 80
+- `targetPort`: 80
+- `nodePort`: 31781
+- `labels`: ...
+- `selector`: ...
 
 
 #### 2. Create voting-app-deployment
