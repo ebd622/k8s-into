@@ -54,8 +54,10 @@ TODO
 TODO
 
 #### 8. Create db service
+TODO
 
 #### 9. Create postgres-deployment
+TODO
 
 
 
