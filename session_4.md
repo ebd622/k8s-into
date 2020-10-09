@@ -40,7 +40,10 @@ curl -X POST http://192.168.99.100:31781 -d "vote=a"
 
 
 #### 2. Create voting-app-deployment
-TODO
+- `name`: voting-app-deployment
+- `image`: 
+- `replicas`: ...
+- `selector`: ...
 
 #### 3. Create redis service
 TODO
