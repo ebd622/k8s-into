@@ -4,6 +4,9 @@ Create a kubernetes implementation of the famous [Voting App](https://github.com
 
 ## Arcitecture
 
+The deployment includes two different front-end applications: `Vting app` and 'Resultapp':
+
+
 ![GitHub Logo](/images/voting_app_1.svg)
 
 Task: deploy all micriservices according to the architechture
