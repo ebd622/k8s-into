@@ -60,7 +60,13 @@ TODO
 Worker app [java](https://github.com/dockersamples/example-voting-app/blob/master/worker/src/main/java/worker/Worker.java) version
 
 #### 6. Create result-service
-TODO
+- `name`: result-service
+- `type`: NodePort
+- `port`: 80
+- `targetPort`: 80
+- `nodePort`: 31364
+- `labels`: ...
+- `selector`: ...
 
 #### 7. Create result-app-deployment
 TODO
