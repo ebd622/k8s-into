@@ -4,7 +4,7 @@ Create a kubernetes implementation of the famous [Voting App](https://github.com
 
 ## Arcitecture
 
-The deployment includes two different front-end applications: `Vting app` and `Result app`:
+The deployment includes two different front-end applications: `Vting app` and `Result app`, `Redis` queue, `Worker app` and `DB`:
 
 
 ![GitHub Logo](/images/voting_app_1.svg)
