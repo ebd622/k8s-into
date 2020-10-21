@@ -11,6 +11,10 @@ The deployment includes two different front-end applications: `Vting app` and `R
 
 Task: deploy all micriservices according to the architechture
 
+## Sequence diagram
+
+![GitHub Logo](/images/Making_Vote.png)
+
 ## Requests
 Voting app:
 ```
