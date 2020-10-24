@@ -11,15 +11,11 @@ The deployment includes two different front-end applications: `Vting app` and `R
 
 Task: deploy all micriservices according to the architechture
 
-## Sequence diagram
-
-### Making votes
+## Sequence diagrams
 
 <p align="center">
   <img src="/images/Making_Vote.png">
 </p>
-
-### Getting results
 
 <p align="center">
   <img src="/images/Getting_results.png">
