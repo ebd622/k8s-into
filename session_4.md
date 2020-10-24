@@ -13,9 +13,13 @@ Task: deploy all micriservices according to the architechture
 
 ## Sequence diagram
 
+### Making votes
+
 <p align="center">
   <img src="/images/Making_Vote.png">
 </p>
+
+### Getting results
 
 <p align="center">
   <img src="/images/Getting_results.png">
