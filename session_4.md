@@ -13,9 +13,13 @@ Task: deploy all micriservices according to the architechture
 
 ## Sequence diagram
 
-![GitHub Logo](/images/Making_Vote.png)
+<p align="center">
+  <img src="/images/Making_Vote.png">
+</p>
 
-![GitHub Logo](/images/Getting_results.png)
+<p align="center">
+  <img src="/images/Getting_results.png">
+</p>
 
 ## Requests
 Voting app:
