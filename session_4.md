@@ -15,6 +15,8 @@ Task: deploy all micriservices according to the architechture
 
 ![GitHub Logo](/images/Making_Vote.png)
 
+![GitHub Logo](/images/Getting_results.png)
+
 ## Requests
 Voting app:
 ```
