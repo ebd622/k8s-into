@@ -62,6 +62,7 @@ http://192.168.99.100:31364
 - `labels`: ...
 - `selector`: ...
 
+(Check the solution: [voting-app-service.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/voting-app-service.yml))
 
 #### 2. Create voting-app-deployment
 - `name`: voting-app-deployment
@@ -73,7 +74,14 @@ http://192.168.99.100:31364
 (Check the solution: [voting-app-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/voting-app-deployment.yml))
 
 #### 3. Create redis service
-TODO
+- `name`: redis-service
+- `type`: NodePort
+- `port`: 6379
+- `targetPort`: 6379
+- `labels`: ...
+- `selector`: ...
+
+(Check the solution: [redis-service.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/redis-service.yml))
 
 #### 4. Create redis-deployment
 TODO
