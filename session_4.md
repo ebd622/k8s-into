@@ -65,9 +65,12 @@ http://192.168.99.100:31364
 
 #### 2. Create voting-app-deployment
 - `name`: voting-app-deployment
-- `image`: 
-- `replicas`: ...
+- `replicas`: 3
+- `image`: dockersamples/examplevotingapp_vote
+- `labels`: ...
 - `selector`: ...
+
+(Check the solution: [voting-app-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/voting-app-deployment.yml))
 
 #### 3. Create redis service
 TODO
