@@ -95,9 +95,13 @@ http://192.168.99.100:31364
 
 
 #### 5. Create worker-app-deployment
-TODO
+- `name`: worker-app-deployment
+- `replicas`: 3
+- `image`: dockersamples/examplevotingapp_worker
+- `labels`: ...
+- `selector`: ...
 
-Worker app [java](https://github.com/dockersamples/example-voting-app/blob/master/worker/src/main/java/worker/Worker.java) version
+(Check the solution: [worker-app-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/worker-app-deployment.yml))
 
 #### 6. Create result-service
 - `name`: result-service
@@ -108,8 +112,16 @@ Worker app [java](https://github.com/dockersamples/example-voting-app/blob/maste
 - `labels`: ...
 - `selector`: ...
 
+(Check the solution: [result-app-service.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/result-app-service.yml))
+
 #### 7. Create result-app-deployment
-TODO
+- `name`: result-app-deployment
+- `replicas`: 1
+- `image`: dockersamples/examplevotingapp_result
+- `labels`: ...
+- `selector`: ...
+
+(Check the solution: [worker-app-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/worker-app-deployment.yml))
 
 #### 8. Create db service
 TODO
