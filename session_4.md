@@ -84,7 +84,15 @@ http://192.168.99.100:31364
 (Check the solution: [redis-service.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/redis-service.yml))
 
 #### 4. Create redis-deployment
-TODO
+- `name`: redis-deployment
+- `replicas`: 1
+- `image`: redis
+- `containerPort`: 6379
+- `labels`: ...
+- `selector`: ...
+
+(Check the solution: [redis-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/redis-deployment.yml))
+
 
 #### 5. Create worker-app-deployment
 TODO
