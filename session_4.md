@@ -124,10 +124,25 @@ http://192.168.99.100:31364
 (Check the solution: [worker-app-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/worker-app-deployment.yml))
 
 #### 8. Create db service
-TODO
+- `name`: db
+- `type`: ClusterIP
+- `port`: 5432
+- `targetPort`: 5432
+- `labels`: ...
+- `selector`: ...
+
+(Check the solution: [postgres-service.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/postgres-service.yml))
 
 #### 9. Create postgres-deployment
-TODO
+- `name`: postgres-deployment
+- `replicas`: 1
+- `image`: postgres:9.6.5
+- `containerPort`: 5432
+- `labels`: ...
+- `selector`: ...
+
+(Check the solution: [postgres-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/postgres-deployment.yml))
+
 
 
 
