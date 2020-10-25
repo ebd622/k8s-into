@@ -9,7 +9,11 @@ The deployment includes two different front-end applications: `Vting app` and `R
 
 ![GitHub Logo](/images/voting_app_1.svg)
 
-Task: deploy all micriservices according to the architechture
+* The voting-app is a front-end web app in Python which lets you vote between two options;
+* Redis is a queue which collects new votes;
+* The worker-app is a [java](https://github.com/dockersamples/example-voting-app/blob/master/worker/src/main/java/worker/Worker.java) application which consumes votes and stores them in DB;
+* The DB is a Postgres database;
+* The result-app is a Node.js webapp which shows the results of the voting in real time;
 
 ## Sequence diagrams
 
