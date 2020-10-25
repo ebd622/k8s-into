@@ -25,24 +25,31 @@ The deployment includes two different front-end applications: `Vting app` and `R
   <img src="/images/Getting_results.png">
 </p>
 
-## Requests
-Voting app:
+## Front-end applications
+
+### Voting app
+
+Use the following URL to open the Voting-app in a browser:
 ```
 http://192.168.99.100:31781
 ```
 
-Result app:
-```
-http://192.168.99.100:31364
-```
+For voting you can also make a POST request using `curl`:
 
-POST request to Voting app:
 ```
 curl -X POST http://192.168.99.100:31781 -d "vote=a"
 ```
 - `vote=a`: vote for a cat
 - `vote=b`: vote for a dog
 
+
+
+### Result app:
+Use the following URL to open the Result-app in a browser:
+
+```
+http://192.168.99.100:31364
+```
 
 ## Steps
 
