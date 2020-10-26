@@ -1,6 +1,6 @@
 # Assignment
 
-Create a kubernetes implementation of the [Voting App](https://dockerlabs.collabnix.com/play-with-docker/example-voting-app/) example used normally as a demo for Docker.
+Create a kubernetes implementation of the [Voting App](https://dockerlabs.collabnix.com/play-with-docker/example-voting-app/) example which is normally normally as a demo for Docker.
 
 ## Arcitecture
 
