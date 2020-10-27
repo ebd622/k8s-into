@@ -121,7 +121,7 @@ http://192.168.99.100:31364
 - `labels`: ...
 - `selector`: ...
 
-(Check the solution: [worker-app-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/worker-app-deployment.yml))
+(Check the solution: [result-app-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/result-app-deployment.yml))
 
 #### 8. Create db service
 - `name`: db
