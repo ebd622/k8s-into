@@ -93,37 +93,7 @@ http://192.168.99.100:31364
 
 (Check the solution: [redis-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/redis-deployment.yml))
 
-
-#### 5. Create worker-app-deployment
-- `name`: worker-app-deployment
-- `replicas`: 3
-- `image`: dockersamples/examplevotingapp_worker
-- `labels`: ...
-- `selector`: ...
-
-(Check the solution: [worker-app-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/worker-app-deployment.yml))
-
-#### 6. Create result-service
-- `name`: result-service
-- `type`: NodePort
-- `port`: 80
-- `targetPort`: 80
-- `nodePort`: 31364
-- `labels`: ...
-- `selector`: ...
-
-(Check the solution: [result-app-service.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/result-app-service.yml))
-
-#### 7. Create result-app-deployment
-- `name`: result-app-deployment
-- `replicas`: 1
-- `image`: dockersamples/examplevotingapp_result
-- `labels`: ...
-- `selector`: ...
-
-(Check the solution: [result-app-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/result-app-deployment.yml))
-
-#### 8. Create db service
+#### 5. Create db service
 - `name`: db
 - `type`: ClusterIP
 - `port`: 5432
@@ -133,7 +103,7 @@ http://192.168.99.100:31364
 
 (Check the solution: [postgres-service.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/postgres-service.yml))
 
-#### 9. Create postgres-deployment
+#### 6. Create postgres-deployment
 - `name`: postgres-deployment
 - `replicas`: 1
 - `image`: postgres:9.6.5
@@ -144,7 +114,33 @@ http://192.168.99.100:31364
 (Check the solution: [postgres-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/postgres-deployment.yml))
 
 
+#### 7. Create result-service
+- `name`: result-service
+- `type`: NodePort
+- `port`: 80
+- `targetPort`: 80
+- `nodePort`: 31364
+- `labels`: ...
+- `selector`: ...
+
+(Check the solution: [result-app-service.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/result-app-service.yml))
+
+#### 8. Create result-app-deployment
+- `name`: result-app-deployment
+- `replicas`: 1
+- `image`: dockersamples/examplevotingapp_result
+- `labels`: ...
+- `selector`: ...
+
+(Check the solution: [result-app-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/result-app-deployment.yml))
 
 
+#### 9. Create worker-app-deployment
+- `name`: worker-app-deployment
+- `replicas`: 3
+- `image`: dockersamples/examplevotingapp_worker
+- `labels`: ...
+- `selector`: ...
 
+(Check the solution: [worker-app-deployment.yml](https://github.com/ebd622/k8s-into/blob/master/src/voting-app/worker-app-deployment.yml))
 
