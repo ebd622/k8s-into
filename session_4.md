@@ -136,6 +136,8 @@ http://192.168.99.100:31364
 
 
 #### 9. Create worker-app-deployment
+(The worker-app should be deployed after Redis and DB have been deployed)
+
 - `name`: worker-app-deployment
 - `replicas`: 3
 - `image`: dockersamples/examplevotingapp_worker
