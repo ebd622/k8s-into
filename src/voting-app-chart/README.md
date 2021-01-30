@@ -18,7 +18,7 @@ helm install voting-app --dry-run .
 
 Install the chart:
 ```
-helm install crud-app .
+helm install voting-app .
 ```
 A chart with the name crud-app will be deployed
  
@@ -31,16 +31,16 @@ helm ls
 ```
 Get deployment history:
 ```
-helm history crud-app
+helm history voting-app
 ```
 
 **4. Run tests**
 
 ```
-helm test crud-app
+helm test voting-app
 ```
 
 **5. Uninstall the chart**
 ```
-helm uninstall crud-app
+helm uninstall voting-app
 ```
