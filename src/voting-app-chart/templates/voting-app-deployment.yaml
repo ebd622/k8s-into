@@ -5,7 +5,7 @@ metadata:
   labels:
     app: demo-voting-app
 spec:
-  replicas: 3
+  replicas: {{.Values.votingApp.replicaCount}}
   selector:
     matchLabels:
       name: voting-app-pod
@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: voting-app
-        image: {{ .Values.votingApp.image.repository }}
+        image: {{.Values.votingApp.image.repository}}
         ports:
         - containerPort: 80
