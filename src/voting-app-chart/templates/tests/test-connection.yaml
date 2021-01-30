@@ -8,10 +8,17 @@ metadata:
     "helm.sh/hook": test-success
 spec:
   containers:
-    - name: wget
+    - name: wget1
       image: busybox
       command: [wget]
       args:
       - -O-
       - result-service:80
+    - name: wget2
+      image: busybox
+      command: [wget]
+      args:
+        - -O-
+        - voting-service:80
+
   restartPolicy: Never
