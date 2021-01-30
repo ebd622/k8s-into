@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: postgres:9.6.5
+        image: {{ .Values.postgres.image.repository }}:{{ .Values.postgres.image.tag }}
         ports:
-        - containerPort: 5432
+        - containerPort: {{ .Values.postgres.port }}

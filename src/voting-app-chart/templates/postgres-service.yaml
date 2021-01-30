@@ -7,8 +7,8 @@ metadata:
     app: demo-voting-app
 spec:
   ports:
-  - port: 5432
-    targetPort: 5432
+  - port: {{ .Values.postgres.port }}
+    targetPort: {{ .Values.postgres.port }}
   selector:
     name: postgres-pod
     app: demo-voting-app

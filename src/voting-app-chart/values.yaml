@@ -4,34 +4,29 @@
 
 replicaCount: 1
 
-image:
-  repository: nginx
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
-
 votingApp:
   image:
     repository: dockersamples/examplevotingapp_vote
-    tag: 0.0.2
 
 resultApp:
   image:
     repository: dockersamples/examplevotingapp_result
-    tag: 0.0.2
+
+postgres:
+  image:
+    repository: postgres
+    tag: 9.6.5
+  port: 5432
+
+redis:
+  image:
+    repository: redis
+  port: 6379
 
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
-serviceAccount:
-  # Specifies whether a service account should be created
-  create: true
-  # Annotations to add to the service account
-  annotations: {}
-  # The name of the service account to use.
-  # If not set and create is true, a name is generated using the fullname template
-  name: ""
 
 podAnnotations: {}
 

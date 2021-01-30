@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: redis
-        image: redis
+        image: {{ .Values.redis.image.repository }}
         ports:
-        - containerPort: 6379
+        - containerPort: {{ .Values.redis.port }}
