@@ -10,7 +10,7 @@ spec:
   ports:
   - port: 80
     targetPort: 80
-    nodePort: 31781
+    nodePort: {{ .Values.votingApp.nodePort }}
   selector:
     name: voting-app-pod
     app: demo-voting-app

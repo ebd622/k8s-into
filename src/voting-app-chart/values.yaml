@@ -7,10 +7,12 @@ replicaCount: 1
 votingApp:
   image:
     repository: dockersamples/examplevotingapp_vote
+  nodePort: 31781
 
 resultApp:
   image:
     repository: dockersamples/examplevotingapp_result
+  nodePort: 31364
 
 postgres:
   image:
@@ -22,6 +24,11 @@ redis:
   image:
     repository: redis
   port: 6379
+
+workerApp:
+  image:
+    repository: dockersamples/examplevotingapp_worker
+
 
 imagePullSecrets: []
 nameOverride: ""
