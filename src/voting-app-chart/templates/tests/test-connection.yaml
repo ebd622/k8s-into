@@ -10,6 +10,8 @@ spec:
   containers:
     - name: wget
       image: busybox
-      command: ['wget']
-      args: ['{{ include "voting-app-chart.fullname" . }}:{{ .Values.service.port }}']
+      command: [wget]
+      args:
+      - -O-
+      - result-service:80
   restartPolicy: Never

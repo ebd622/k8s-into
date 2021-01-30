@@ -35,7 +35,7 @@ workerApp:
 
 imagePullSecrets: []
 nameOverride: ""
-fullnameOverride: ""
+fullnameOverride: "vapp"
 
 
 podAnnotations: {}
