@@ -10,6 +10,16 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
+votingApp:
+  image:
+    repository: dockersamples/examplevotingapp_vote
+    tag: 0.0.2
+
+resultApp:
+  image:
+    repository: dockersamples/examplevotingapp_result
+    tag: 0.0.2
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
