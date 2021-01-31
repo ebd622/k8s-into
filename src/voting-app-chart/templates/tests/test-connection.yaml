@@ -8,13 +8,13 @@ metadata:
     "helm.sh/hook": test-success
 spec:
   containers:
-    - name: wget1
+    - name: test-result-app
       image: busybox
       command: [wget]
       args:
       - -O-
       - result-service:80
-    - name: wget2
+    - name: test-voting-app
       image: busybox
       command: [wget]
       args:
