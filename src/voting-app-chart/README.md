@@ -4,6 +4,8 @@ This is an example of how to deploy a [Voting-app](https://github.com/ebd622/k8s
 
 **Prerequisites:** The package manager [Helm](https://helm.sh/) needs to be installed in your environment to deploy the example. Check out [Installing Helm](https://helm.sh/docs/intro/install/) for details.
 
+## Step-by-step deployment
+
 **1. Clone the repository**
 ```
 git clone https://github.com/ebd622/...
