@@ -57,7 +57,7 @@ helm test voting-app
 
 A test-pod includes two containers, both are created from the image `busybox`:
 
-```
+```javascript
   containers:
     - name: test-result-app
       image: busybox
@@ -71,7 +71,6 @@ A test-pod includes two containers, both are created from the image `busybox`:
       args:
         - -O-
         - voting-service:80
-
 ```
 The containers use `wget` to check whether `voting-app` and `resul-app` are up and running. 
 
