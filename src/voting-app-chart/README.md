@@ -55,6 +55,26 @@ helm history voting-app
 helm test voting-app
 ```
 
+A test-pod includes two containers, both are created from the image `busybox`:
+
+```
+  containers:
+    - name: test-result-app
+      image: busybox
+      command: [wget]
+      args:
+      - -O-
+      - result-service:80
+    - name: test-voting-app
+      image: busybox
+      command: [wget]
+      args:
+        - -O-
+        - voting-service:80
+
+```
+The containers use `wget` to check whether `voting-app` and `resul-app` are up and running. 
+
 **5. Uninstall the chart**
 ```
 helm uninstall voting-app
