@@ -38,7 +38,13 @@ List all the deployments:
 ```
 helm ls
 ```
-Get deployment history:
+Get a status of the deployment:
+
+```
+helm status voting-app
+```
+
+Get deployment history of the chart:
 ```
 helm history voting-app
 ```
