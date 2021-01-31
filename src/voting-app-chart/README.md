@@ -1,6 +1,6 @@
 # Voting-app with Helm
 
-This is an example of how to deploy a Voting-app using a Helm chart
+This is an example of how to deploy a [Voting-app](https://github.com/ebd622/k8s-into/blob/master/session_4.md) using a Helm chart.
 
 **1. Clone the repository**
 ```
