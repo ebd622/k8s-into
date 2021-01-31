@@ -29,7 +29,7 @@ Install the chart:
 ```
 helm install voting-app .
 ```
-A chart with the name voting-app will be deployed
+A chart with the name voting-app will be installed.
  
 
 **3. Get info about deployment**
