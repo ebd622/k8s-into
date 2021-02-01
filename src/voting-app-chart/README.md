@@ -9,7 +9,7 @@ This is an example of how to deploy a [Voting-app](https://github.com/ebd622/k8s
 **1. Clone the repository**
 ```
 git clone https://github.com/ebd622/k8s-into.git
-cd src/voting-app-chart
+cd k8s-into/src/voting-app-chart/
 ```
 
 **2. Install the chart**
