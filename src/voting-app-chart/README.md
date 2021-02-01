@@ -78,3 +78,4 @@ The containers use `wget` to check whether `voting-app` and `resul-app` are up a
 ```
 helm uninstall voting-app
 ```
+After running the command all the kubernetes objects, earlier created with the Helm chart, will be removed from the cluster.
