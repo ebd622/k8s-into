@@ -48,6 +48,30 @@ Get deployment history of the chart:
 ```
 helm history voting-app
 ```
+You can also run kubectl command to check kubernetes deployments and pods
+
+```
+kubectl get deployment,pod
+```
+When all pods are up and running the expected result should be like this:
+
+
+```javascript
+NAME                                    READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/postgres-deployment     1/1     1            1           5m58s
+deployment.apps/redis-deployment        1/1     1            1           5m58s
+deployment.apps/result-app-deployment   1/1     1            1           5m58s
+deployment.apps/voting-app-deployment   1/1     1            1           5m58s
+deployment.apps/worker-app-deployment   1/1     1            1           5m58s
+
+NAME                                         READY   STATUS    RESTARTS   AGE
+pod/postgres-deployment-77df95cdd7-nmx56     1/1     Running   0          5m58s
+pod/redis-deployment-5d7988b4bb-zlj9q        1/1     Running   0          5m58s
+pod/result-app-deployment-7cdc94dfcd-75wn4   1/1     Running   0          5m58s
+pod/voting-app-deployment-678c67fc7-q7fjh    1/1     Running   0          5m58s
+pod/worker-app-deployment-767d5b67ff-jwb5d   1/1     Running   0          5m58s
+```
+
 
 **4. Run tests**
 
