@@ -32,7 +32,7 @@ helm install voting-app .
 A chart with the name voting-app will be installed.
  
 
-**3. Get info about deployment**
+**3. Get info about a deployment**
 
 List all the deployments:
 ```
