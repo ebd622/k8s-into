@@ -34,4 +34,5 @@ Once we have this chart we can effectively reuse all yaml-s by injecting paramet
 
 TODO
 
-
+Resources:
+https://www.padok.fr/en/blog/helm-3-commands
