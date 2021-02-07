@@ -19,8 +19,9 @@ In Kubernetes we describe everything what we do with yaml-files. These yaml-fail
 
 But managing all yaml-files can sometimes become a bit complicated. We may have many different yaml-files needed to deploy our applications/services to a Kubernetes cluster. All these yaml-s makes up our application and its infrastructure. 
 
-It is important to notice here that all the yaml-s are not **reusable**. It means that if we want to build another application - we will have to copy/paste all the yaml-s and then change what is needed.
+It is important to notice here that all the yaml-s are not **reusable**. It means that if we want to build another application - we will have to copy/paste all the yaml-s and then change what is needed. If we need to deploy more applications we may end up with lots of yaml-s and lots of duplication. 
 
+In over time these yaml-s may become hard to manage. And this is where Helm comes in.
 
 ## Arcitecture
 
