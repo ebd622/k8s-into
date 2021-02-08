@@ -36,9 +36,9 @@ Once we have this chart we can effectively reuse all yaml-s by injecting paramet
 
 TODO
 
-<img src="images/Helm2-architecture.PNG" width="80%">
+<img src="images/Helm2-architecture.PNG" width="60%">
 
-<img src="images/Helm3-architecture.PNG" width="80%">
+<img src="images/Helm3-architecture.PNG" width="60%">
 
 Resources:
 https://www.padok.fr/en/blog/helm-3-commands
