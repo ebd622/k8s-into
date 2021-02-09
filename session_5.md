@@ -35,6 +35,7 @@ Once we have this chart we can effectively reuse all yaml-s by injecting paramet
 ## Arcitecture
 
 TODO
+Helm2 vs Helm3
 
 <img src="images/Helm2-architecture.PNG" width="60%">
 
