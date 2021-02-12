@@ -58,6 +58,10 @@ Helm 3 uses the client-only architecture
 
 <img src="images/Helm3-architecture.PNG" width="60%">
 
+Removing Tiller has solved a security concern making Helm more secure. But this also makes *Release Management* feature more challenging. 
+
+
+
 Resources:
 https://www.padok.fr/en/blog/helm-3-commands
 
