@@ -63,10 +63,15 @@ Removing Tiller has solved a security concern making Helm more secure. But this 
 
 ## Creating your first Helm chart 
 
+Helm chart is a *unit of deployment*, it is made up with a set of yaml files. We can have a chart for microservices or any software like Redis, MySQL, Prometeus and so on.
+
+Use the following command to create a chart called `example-app`:
+
 ```
 helm create example-app
 ```
 
+This will create a new folder `example-app`:
 
 ```
 └── example-app							
