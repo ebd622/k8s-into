@@ -44,7 +44,7 @@ In  the version 2 Helm installation comes in two parts: a ***Helm Client*** (CLI
 
 This architecture offers additional valuable feature which is **Release Management**. 
 
-##### Release Management
+*Release Management*
 Whenever you create or change deployment Tiller will store a copy of each configuration for future reference. In this way Tiller creates a history and keeps track of all chart executions. This allows to rollback to a previous revision in a case of any issue with a new deployment.
 
 But Helm 2 architecture has a big caveat because Tiller has too much power inside of a Kubernetes cluster:
