@@ -36,17 +36,19 @@ Once we have this chart we can effectively reuse all yaml-s by injecting paramet
 
 First we have to distinguish Helm 2 and Helm 3. 
 
-### Helm 2
-In  the version 2 Helm installation comes in two parts: a ***helm CLI*** (a client) and a ***server*** called Tiller. This architecture offers additional valuable feature which is **Release Management**. 
+#### Helm 2
+In  the version 2 Helm installation comes in two parts: a ***helm CLI*** (a client) and a ***server*** called Tiller. 
+
+<img src="images/Helm2-architecture.PNG" width="60%">
+
+This architecture offers additional valuable feature which is **Release Management**. 
 
 Whenever you create or change deployment Tiller will store a copy of each configuration for future reference. In this way Tiller creates a history and keeps track of all chart executions. This allows to rollback to a previous revision in a case of any issue with a new deployment.
 
 But this set up has a big caveat: Tiller has too much power inside of a Kubernetes cluster. Tiller can create, updated, delete components and it has too much permissions within a cluster. This makes a big security issue. This is a reason why Tiller has been removed in Helm 3.
 
-<img src="images/Helm2-architecture.PNG" width="60%">
 
-
-### Helm 3
+#### Helm 3
 <img src="images/Helm3-architecture.PNG" width="60%">
 
 Resources:
