@@ -43,6 +43,9 @@ Helm2 vs Helm3
 
 Resources:
 https://www.padok.fr/en/blog/helm-3-commands
+
 https://cloudacademy.com/course/introduction-to-helm-1034/helm-architecture/
+
 https://banzaicloud.com/blog/helm3-the-good-the-bad-and-the-ugly/
+
 
