@@ -63,22 +63,25 @@ Removing Tiller has solved a security concern making Helm more secure. But this 
 
 ## Creating your first Helm chart 
 
+```
+helm create example-app
+```
 
 
 ```
 └── example-app							
-    ├── charts								# Charts that this chart depends on
-    ├── Chart.yaml							# Information about your chart
-    ├── templates							# The template files
+    ├── charts							# Charts that this chart depends on
+    ├── Chart.yaml						# Information about your chart
+    ├── templates						# The template files
     │   ├── deployment.yaml
     │   ├── _helpers.tpl
     │   ├── ingress.yaml
     │   ├── NOTES.txt
     │   ├── serviceaccount.yaml
     │   ├── service.yaml
-    │   └── tests							# The test files
+    │   └── tests						# The test files
     │       └── test-connection.yaml
-    └── values.yaml							# The default values for your templates
+    └── values.yaml						# The default values for your templates
 ```    
 
 
