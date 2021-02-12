@@ -37,7 +37,7 @@ Once we have this chart we can effectively reuse all yaml-s by injecting paramet
 First we have to distinguish Helm 2 and Helm 3. 
 
 #### Helm 2
-In  the version 2 Helm installation comes in two parts: a ***Helm Client*** (CLI) and a server called ***Tiller***.
+In  the version 2 Helm installation comes in two parts: a ***Helm Client*** (CLI) and a server called ***Tiller***:
 
 <img src="images/Helm2-architecture.PNG" width="60%">
 
@@ -54,12 +54,13 @@ This makes a big security issue. This is a reason why Tiller has been removed in
 
 
 #### Helm 3
-Helm 3 uses the client-only architecture
+Helm 3 uses the client-only architecture:
 
 <img src="images/Helm3-architecture.PNG" width="60%">
 
 Removing Tiller has solved a security concern making Helm more secure. But this also makes *Release Management* feature more challenging. 
 
+## Creating your first Helm chart 
 
 
 Resources:
