@@ -84,7 +84,7 @@ This will create a new folder `example-app`:
     │   ├── NOTES.txt
     │   ├── serviceaccount.yaml
     │   ├── service.yaml
-    │   └── tests					# The test files
+    │   └── tests					# The test files (optional, can be removed)
     │       └── test-connection.yaml
     └── values.yaml					# The default values for your templates
 ```    
