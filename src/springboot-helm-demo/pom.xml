@@ -9,7 +9,7 @@
 	<groupId>com.springboot.demo</groupId>
 	<artifactId>springboot-helm-demo</artifactId>
 	<version>1.0.0</version>
-	<name>Kubernetes:: Spring Boot:: Help :: Demo</name>
+	<name>Kubernetes:: Spring Boot:: Helm :: Demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>8</java.version>

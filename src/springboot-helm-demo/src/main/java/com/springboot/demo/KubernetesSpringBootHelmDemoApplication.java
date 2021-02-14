@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KubernetesSpringBootHelpDemoApplication {
+public class KubernetesSpringBootHelmDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KubernetesSpringBootHelpDemoApplication.class, args);
+		SpringApplication.run(KubernetesSpringBootHelmDemoApplication.class, args);
 	}
 
 }
