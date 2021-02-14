@@ -8,7 +8,7 @@
 	</parent>
 	<groupId>com.springboot.demo</groupId>
 	<artifactId>springboot-helm-demo</artifactId>
-	<version>1.0.0</version>
+	<version>2.0.0</version>
 	<name>Kubernetes:: Spring Boot:: Helm :: Demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -50,21 +50,21 @@
 					</excludes>
 				</configuration>
 			</plugin>
-<!--      <plugin>-->
-<!--        <groupId>io.fabric8</groupId>-->
-<!--        <artifactId>fabric8-maven-plugin</artifactId>-->
-<!--        <version>3.5.30</version>-->
-<!--        <executions>-->
-<!--          <execution>-->
-<!--            <id>fmp</id>-->
-<!--            <goals>-->
-<!--              <goal>resource</goal>-->
-<!--              <goal>helm</goal>-->
-<!--              <goal>build</goal>-->
-<!--            </goals>-->
-<!--          </execution>-->
-<!--        </executions>-->
-<!--      </plugin>-->
+      <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>fabric8-maven-plugin</artifactId>
+        <version>3.5.30</version>
+        <executions>
+          <execution>
+            <id>fmp</id>
+            <goals>
+              <goal>resource</goal>
+              <goal>helm</goal>
+              <goal>build</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
 		</plugins>
 	</build>
 
