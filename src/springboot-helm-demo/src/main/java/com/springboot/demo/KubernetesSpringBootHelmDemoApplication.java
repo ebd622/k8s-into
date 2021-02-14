@@ -7,9 +7,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 @SpringBootApplication
 public class KubernetesSpringBootHelmDemoApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(KubernetesSpringBootHelmDemoApplication.class, args);
 	}
-
 }

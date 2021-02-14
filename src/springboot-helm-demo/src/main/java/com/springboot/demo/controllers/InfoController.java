@@ -3,6 +3,7 @@ package com.springboot.demo.controllers;
 import com.springboot.demo.domain.Info;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,11 +15,26 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class InfoController {
 
+    @Value("${app.version}")
+    private String appVersion;
+
     @GetMapping
     public ResponseEntity<Info> findAll() {
         Info info = new Info();
-        info.setDatabase("Test");
-        info.setVersion("1");
+        info.setApp_version(appVersion);
+
+        //Set environment
+        String env = System.getenv().getOrDefault("DEPLOY_ENV", "dev");
+        info.setEnvironment(env);
+
+        //Set db_conf
+        String db_conf= System.getenv().getOrDefault("DB_CONF", "db-dev");
+        info.setDb_conf(db_conf);
+
+        //Set db_user
+        String db_user= System.getenv().getOrDefault("DB_USER", "user-dev");
+        info.setDb_user(db_user);
+
         return ResponseEntity.ok(info);
     }
 }
