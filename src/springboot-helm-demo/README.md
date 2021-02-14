@@ -10,7 +10,7 @@ mvn clean install
 docker tag <IMAGE_ID> ebd622/springboot-helm-demo:<TAG>
 ```
 
-3. Tag am image
+3. Push images to the Docker Hub
 ```
 docker push ebd622/springboot-helm-demo:<TAG>
 ```
