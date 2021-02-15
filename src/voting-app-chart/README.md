@@ -21,7 +21,7 @@ helm install voting-app --dry-run .
 ```
 or use `helm template` command to render chart templates locally and display the output:
 ```
-helm template voting-app  .
+helm template voting-app .
 ```
 
 By default Helm will pick up the file `values.yaml` to get deployment parameters. You can provide another file using the flag `-f` if you want to provide another values-file:
