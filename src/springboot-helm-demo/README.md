@@ -7,7 +7,7 @@
 ```
 mvn clean install
 ```
-2. Tag am image
+2. Tag the created image
 ```
 docker tag <IMAGE_ID> ebd622/springboot-helm-demo:<TAG>
 ```
