@@ -2,6 +2,8 @@
 
 # Springboot Helm demo
 
+This is a simple Springboot API-application developed for Helm-demo session.
+
 1. Build the project and create an image
 
 ```
