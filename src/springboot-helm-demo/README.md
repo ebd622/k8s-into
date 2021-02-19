@@ -4,6 +4,16 @@
 
 This is a simple Springboot API-application developed for Helm-demo session.
 
+The application exposes the end point:
+
+```
+
+```
+
+
+
+### Build an impage and push it to DockerHub
+
 1. Build the project and create an image
 
 ```
