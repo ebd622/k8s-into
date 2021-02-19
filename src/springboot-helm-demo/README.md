@@ -7,7 +7,7 @@ This is a simple Springboot API-application developed for Helm-demo session.
 The application exposes the end point:
 
 ```
-
+curl localhost:8080/api/info
 ```
 
 
