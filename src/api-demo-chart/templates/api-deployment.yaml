@@ -23,3 +23,6 @@ spec:
         image: {{.Values.apiApp.image.repository}}
         ports:
         - containerPort: 80
+        envFrom:
+        - configMapRef:
+            name: api-config
