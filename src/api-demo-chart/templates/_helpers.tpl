@@ -1,7 +1,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "voting-app-chart.name" -}}
+{{- define "api-demo-chart.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
@@ -10,7 +10,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "voting-app-chart.fullname" -}}
+{{- define "api-demo-chart.fullname" -}}
 {{- if .Values.fullnameOverride }}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
 {{- else }}
@@ -26,16 +26,16 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "voting-app-chart.chart" -}}
+{{- define "api-demo-chart.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Common labels
 */}}
-{{- define "voting-app-chart.labels" -}}
-helm.sh/chart: {{ include "voting-app-chart.chart" . }}
-{{ include "voting-app-chart.selectorLabels" . }}
+{{- define "api-demo-chart.labels" -}}
+helm.sh/chart: {{ include "api-demo-chart.chart" . }}
+{{ include "api-demo-chart.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -45,17 +45,17 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "voting-app-chart.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "voting-app-chart.name" . }}
+{{- define "api-demo-chart.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "api-demo-chart.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "voting-app-chart.serviceAccountName" -}}
+{{- define "api-demo-chart.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create }}
-{{- default (include "voting-app-chart.fullname" .) .Values.serviceAccount.name }}
+{{- default (include "api-demo-chart.fullname" .) .Values.serviceAccount.name }}
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
