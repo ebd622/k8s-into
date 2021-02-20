@@ -2,36 +2,11 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-votingApp:
+apiApp:
   image:
     repository: ebd622/springboot-helm-demo:1.0.0
   nodePort: 31781
   replicaCount: 1
-
-resultApp:
-  image:
-    repository: dockersamples/examplevotingapp_result
-  nodePort: 31364
-  replicaCount: 1
-
-postgres:
-  image:
-    repository: postgres
-    tag: 9.6.5
-  port: 5432
-  replicaCount: 1
-
-redis:
-  image:
-    repository: redis
-  port: 6379
-  replicaCount: 1
-
-workerApp:
-  image:
-    repository: dockersamples/examplevotingapp_worker
-  replicaCount: 1
-
 
 nameOverride: ""
 fullnameOverride: "vapp"
