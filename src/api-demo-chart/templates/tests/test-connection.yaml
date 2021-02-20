@@ -1,15 +1,24 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "{{ include "api-demo-chart.fullname" . }}-test-connection"
+  name: "{{ include "voting-app-chart.fullname" . }}-test-connection"
   labels:
-    {{- include "api-demo-chart.labels" . | nindent 4 }}
+    {{- include "voting-app-chart.labels" . | nindent 4 }}
   annotations:
-    "helm.sh/hook": test
+    "helm.sh/hook": test-success
 spec:
   containers:
-    - name: wget
+    - name: test-result-app
       image: busybox
-      command: ['wget']
-      args: ['{{ include "api-demo-chart.fullname" . }}:{{ .Values.service.port }}']
+      command: [wget]
+      args:
+      - -O-
+      - result-service:80
+    - name: test-voting-app
+      image: busybox
+      command: [wget]
+      args:
+        - -O-
+        - voting-service:80
+
   restartPolicy: Never
