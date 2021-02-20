@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: voting-app-deployment
+  name: api-deployment
   labels:
-    app: demo-voting-app
+    app: api-demo
 spec:
   replicas: {{.Values.votingApp.replicaCount}}
   selector:
     matchLabels:
-      name: voting-app-pod
-      app: demo-voting-app
+      name: api-demo-pod
+      app: api-demo
   template:
     metadata:
-      name: voting-app-pod
+      name: api-demo-pod
       labels:
-        name: voting-app-pod
-        app: demo-voting-app
+        name: api-demo-pod
+        app: api-demo
 
     spec:
       containers:

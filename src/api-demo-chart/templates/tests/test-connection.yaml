@@ -19,6 +19,6 @@ spec:
       command: [wget]
       args:
         - -O-
-        - voting-service:80
+        - api-service:80
 
   restartPolicy: Never

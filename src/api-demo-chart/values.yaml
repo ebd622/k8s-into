@@ -4,7 +4,7 @@
 
 votingApp:
   image:
-    repository: dockersamples/examplevotingapp_vote
+    repository: ebd622/springboot-helm-demo:1.0.0
   nodePort: 31781
   replicaCount: 1
 
