@@ -190,4 +190,61 @@ Run the command `rollback` if you want to rollback to one of the previous releas
 helm rollback api-demo-chart 2 --dry-run
 helm rollback api-demo-chart 2
 ```
+### Use custom names for objects in yaml-files
+
+Let's go ahead and make our chart even more generic.
+
+#### Use case 1: deploy different version of the application
+
+One think that we can do to make our chart more generic and reusable is to inject custom names for all kubernetes objects in yaml-s.
+
+Check out the branch `use-case_1`:
+```
+git checkout use-case_1
+```
+
+
+Let's add a `name` of the application into `values.yaml`:
+```javascript
+apiApp:
+  name: api-demo-v1
+  ...
+```
+
+This will make sure that none of the objects clash and every time we deploy a new chart we can supply a specific `values.yaml` file for that application.
+
+Now we can use `{{.Values.apiApp.name}}` in our yaml files:
+
+
+api-deployment.yaml:
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{.Values.apiApp.name}}
+  labels:
+    app: {{.Values.apiApp.name}}
+...
+```
+
+api-service.yaml
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{.Values.apiApp.name}}
+  labels:
+    name: {{.Values.apiApp.name}}
+    app: {{.Values.apiApp.name}}
+...
+```
+
+api-config.yaml
+```
+apiVersion: v1
+metadata:
+  name: {{.Values.apiApp.name}}
+kind: ConfigMap
+...
+```
 
