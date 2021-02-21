@@ -175,3 +175,19 @@ So, you can use this templating engine and notations to replace pretty  much any
 
 For example, you can create a generic chart to allow your teams to deploy their microservices and share the same chart among many services. You will only need to use different `values.yaml` file.
 
+### Keep track on releases
+
+Every time when you create/upgrade your deployment Helm will create a new release.
+
+The command `history` is used to see all releases:
+
+```
+helm history api-demo-chart
+```
+
+Run the command `rollback` if you want to rollback to one of the previous releases:
+```
+helm rollback api-demo-chart 2 --dry-run
+helm rollback api-demo-chart 2
+```
+
