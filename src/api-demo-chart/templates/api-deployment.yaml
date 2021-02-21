@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: voting-app
-        image: {{.Values.apiApp.image.repository}}
+        image: {{.Values.apiApp.image.repository}}:{{.Values.apiApp.image.tag}}
         ports:
         - containerPort: 80
         envFrom:
