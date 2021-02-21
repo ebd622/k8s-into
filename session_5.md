@@ -96,7 +96,7 @@ TODO: clone a repo
 
 Let's go ahead and see what Helm allows us to do.
 
-### Test templates
+### Test your templates before installing 
 
 Before installing a chart it always makes sense to test rendering of templates 
 
