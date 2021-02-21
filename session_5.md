@@ -247,4 +247,10 @@ metadata:
   name: {{.Values.apiApp.name}}
 ...
 ```
+Now our chart is more generic and we can deploy multiple instances of the chart.
 
+We currently have two value-files with different names:
+* ***values.yaml***: with `name: api-demo-v1`
+* ***values-v2.yaml***:  with `name: api-demo-v2`
+
+Let's install the first chart:
