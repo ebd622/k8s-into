@@ -129,6 +129,8 @@ You can check all the components deployed into a cluster:
 ```
 kubectl get all
 ```
+### Run tests to check the deployment
+TODO
 
 ### Values and parameters
 
