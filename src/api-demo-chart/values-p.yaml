@@ -1,0 +1,18 @@
+# Default values for api-demo-chart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+apiApp:
+  name: api-demo-v2
+  image:
+    repository: ebd622/springboot-helm-demo
+    tag: 2.0.0
+  nodePort: 32222
+  replicaCount: 1
+  config:
+    db_conf: jdbc:mysql://server-p:3306/
+    db_user: user-p
+    deploy_env: test
+
+nameOverride: ""
+fullnameOverride: "vapp"
