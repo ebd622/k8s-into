@@ -249,8 +249,31 @@ metadata:
 ```
 Now our chart is more generic and we can deploy multiple instances of the chart.
 
-We currently have two value-files with different names:
-* ***values.yaml***: with `name: api-demo-v1`
-* ***values-v2.yaml***:  with `name: api-demo-v2`
+For example we have two value-files with different names:
 
-Let's install the first chart:
+* ***values-v1.yaml***:  with the application name `api-demo-v1`
+* ***values-v2.yaml***:  with the application name `api-demo-v2`
+
+Let's install and check the chart.
+
+Install the instance using `values-v1.yaml`:
+
+```
+helm install api-demo-chart-v1 . --values values-v1.yaml
+```
+
+Install the instance using `values-v2.yaml`:
+
+```
+helm install api-demo-chart-v2 . --values values-v2.yaml
+```
+
+We can see two instances of the same chart deployed into the cluster:
+
+```
+$ helm ls
+NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION
+api-demo-chart-v1       default         1               2021-02-21 21:13:41.2995337 +0100 CET   deployed        api-demo-chart-0.1.0    1.16.0
+api-demo-chart-v2       default         1               2021-02-21 21:14:42.5354706 +0100 CET   deployed        api-demo-chart-0.1.0    1.16.0
+
+```
