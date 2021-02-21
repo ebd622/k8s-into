@@ -4,4 +4,5 @@ metadata:
 kind: ConfigMap
 data:
   DB_CONF: {{.Values.apiApp.config.db_conf}}
+  DB_USER: {{.Values.apiApp.config.db_user}}
   DEPLOY_ENV: {{.Values.apiApp.config.deploy_env}}

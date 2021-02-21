@@ -11,6 +11,7 @@ apiApp:
   replicaCount: 1
   config:
     db_conf: jdbc:mysql://server-t:3306/
+    db_user: user-t
     deploy_env: test
 
 nameOverride: ""
