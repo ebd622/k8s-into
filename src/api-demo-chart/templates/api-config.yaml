@@ -1,8 +1,7 @@
 apiVersion: v1
+metadata:
+  name: {{.Values.apiApp.name}}
+kind: ConfigMap
 data:
   DB_CONF: db-acc
   DEPLOY_ENV: acc
-kind: ConfigMap
-metadata:
-  creationTimestamp: null
-  name: api-config

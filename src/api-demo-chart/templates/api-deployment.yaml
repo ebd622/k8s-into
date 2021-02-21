@@ -1,28 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api-deployment
+  name: {{.Values.apiApp.name}}
   labels:
-    app: api-demo
+    app: {{.Values.apiApp.name}}
 spec:
   replicas: {{.Values.apiApp.replicaCount}}
   selector:
     matchLabels:
-      name: api-demo-pod
-      app: api-demo
+      name: {{.Values.apiApp.name}}-pod
+      app: {{.Values.apiApp.name}}
   template:
     metadata:
-      name: api-demo-pod
+      name: {{.Values.apiApp.name}}-pod
       labels:
-        name: api-demo-pod
-        app: api-demo
+        name: {{.Values.apiApp.name}}-pod
+        app: {{.Values.apiApp.name}}
 
     spec:
       containers:
-      - name: api-app
+      - name: {{.Values.apiApp.name}}
         image: {{.Values.apiApp.image.repository}}:{{.Values.apiApp.image.tag}}
         ports:
         - containerPort: 80
         envFrom:
         - configMapRef:
-            name: api-config
+            name: {{.Values.apiApp.name}}
