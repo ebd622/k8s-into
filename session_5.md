@@ -279,3 +279,14 @@ api-demo-chart-v1       default         1               2021-02-21 21:13:41.2995
 api-demo-chart-v2       default         1               2021-02-21 21:14:42.5354706 +0100 CET   deployed        api-demo-chart-0.1.0    1.16.0
 
 ```
+
+#### Use case 2: use different values to deploy a chart in T, A and P
+
+Check out the branch use-case_2:
+
+```
+git checkout use-case_2
+```
+
+TODO
+
