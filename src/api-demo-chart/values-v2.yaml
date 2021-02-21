@@ -3,12 +3,15 @@
 # Declare variables to be passed into your templates.
 
 apiApp:
+  name: api-demo-v2
   image:
     repository: ebd622/springboot-helm-demo
     tag: 2.0.0
   nodePort: 31111
   replicaCount: 1
-  name: api-demo-v2
+  config:
+    db_conf: db-test
+    deploy_env: test
 
 nameOverride: ""
 fullnameOverride: "vapp"

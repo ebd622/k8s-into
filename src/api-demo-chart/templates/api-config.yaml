@@ -3,5 +3,5 @@ metadata:
   name: {{.Values.apiApp.name}}
 kind: ConfigMap
 data:
-  DB_CONF: db-acc
-  DEPLOY_ENV: acc
+  DB_CONF: {{.Values.apiApp.config.db_conf}}
+  DEPLOY_ENV: {{.Values.apiApp.config.deploy_env}}
