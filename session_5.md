@@ -106,7 +106,7 @@ helm template api-demo-chart .
 
 Helm will generate all yaml-s without deploying them to a cluster. 
 
-Helm `template` command is a really powerful command which allows us to test our templates by generating row kubernetes yaml-s. If anything wrong with the templates then the command will generate an error.
+Helm `template` command is a really powerful command which allows us to test our templates by generating row kubernetes yaml-s. If anything is wrong with the templates then the command will generate an error.
 
 ### Install a chart
 
