@@ -6,7 +6,7 @@ apiApp:
   image:
     repository: ebd622/springboot-helm-demo
     tag: 1.0.0
-  nodePort: 31781
+  nodePort: 11111
   replicaCount: 1
 
 nameOverride: ""
