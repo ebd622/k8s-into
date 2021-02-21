@@ -130,3 +130,48 @@ You can check all the components deployed into a cluster:
 kubectl get all
 ```
 
+### Values and parameters
+
+Values file and the parameter injection allows us to inject values into our chart making it reusable. 
+
+api-deployment.yaml:
+``` javascript 
+    spec:
+      containers:
+      - name: api-app
+        image: {{.Values.apiApp.image.repository}}:{{.Values.apiApp.image.tag}}
+        ports:
+        - containerPort: 80
+        envFrom:
+        - configMapRef:
+            name: api-config
+```
+
+values.yaml:
+```
+apiApp:
+  image:
+    repository: ebd622/springboot-helm-demo
+    tag: 1.0.0
+```
+
+If you upgrade your values you are allowed to override them at the time of deployment. You can inject your custom values file with the command `upgrade`:
+
+```
+helm upgrade api-demo-chart . --values values.yaml
+```
+
+Helm will also upgrade our release.
+
+When you simply need to override one or two values in your deployment you can do it over th command line:
+
+```
+helm upgrade api-demo-chart . --set apiApp.image.tag=2.0.0
+```
+
+In this case you can use a command line instead of using a values-file.
+
+So, you can use this templating engine and notations to replace pretty  much anything you like making you chart more generic. 
+
+For example, you can create a generic chart to allow your teams to deploy their microservices and share the same chart among many services. You will only need to use different `values.yaml` file.
+
