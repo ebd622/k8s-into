@@ -108,15 +108,25 @@ Helm will generate all yaml-s without deploying them to a cluster.
 
 Helm `template` command is a really powerful command which allows us to test our templates by generating row kubernetes yaml-s. If anything wrong with the templates then the command will generate an error.
 
+### Install a chart
 
+To Install  the chart run the command `install`:
+```
+helm install api-demo-chart .
+```
+Helm will install everything what is a part of the chart to a Kubernetes cluster.
 
+#### List releases
 
+Every time Helm deploys a chart it will create a release where it tracks the revision. The command `list` can be used to check revisions:
 
-Resources:
-https://www.padok.fr/en/blog/helm-3-commands
+```
+helm list
+```
 
-https://cloudacademy.com/course/introduction-to-helm-1034/helm-architecture/
+You can check all the components deployed into a cluster:
 
-https://banzaicloud.com/blog/helm3-the-good-the-bad-and-the-ugly/
-
+```
+kubectl get all
+```
 
