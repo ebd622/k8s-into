@@ -10,7 +10,7 @@ apiApp:
   nodePort: 31111
   replicaCount: 1
   config:
-    db_conf: db-test
+    db_conf: jdbc:mysql://server-t:3306/
     deploy_env: test
 
 nameOverride: ""
