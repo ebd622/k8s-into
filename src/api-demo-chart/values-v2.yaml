@@ -5,10 +5,10 @@
 apiApp:
   image:
     repository: ebd622/springboot-helm-demo
-    tag: 1.0.0
+    tag: 2.0.0
   nodePort: 31111
   replicaCount: 1
-  name: api-demo-v1
+  name: api-demo-v2
 
 nameOverride: ""
 fullnameOverride: "vapp"
