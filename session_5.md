@@ -194,7 +194,7 @@ helm rollback api-demo-chart 2
 
 Let's go ahead and make our chart even more generic.
 
-#### Use case 1: deploy different version of the application
+#### Use case 1: use the same chart to deploy different app-versions
 
 One think that we can do to make our chart more generic and reusable is to inject custom names for all kubernetes objects in yaml-s.
 
