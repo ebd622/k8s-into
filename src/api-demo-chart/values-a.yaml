@@ -12,7 +12,7 @@ apiApp:
   config:
     db_conf: jdbc:mysql://server-a:3306/
     db_user: user-a
-    deploy_env: test
+    deploy_env: accp
 
 nameOverride: ""
 fullnameOverride: "vapp"
