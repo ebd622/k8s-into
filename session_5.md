@@ -90,6 +90,28 @@ This will create a new folder `example-app`:
 ```    
 
 
+## Work with Helm
+
+TODO: clone a repo
+
+Let's go ahead and see what Helm allows us to do.
+
+### Test templates
+
+Before installing a chart it always makes sense to test rendering of templates 
+
+```
+helm template api-demo-chart .
+```
+
+Helm will generate all yaml-s without deploying them to a cluster. 
+
+Helm `template` command is a really powerful command which allows us to test our templates by generating row kubernetes yaml-s. If anything wrong with the templates then the command will generate an error.
+
+
+
+
+
 Resources:
 https://www.padok.fr/en/blog/helm-3-commands
 
