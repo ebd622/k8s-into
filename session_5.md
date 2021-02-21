@@ -213,7 +213,7 @@ apiApp:
 
 This will make sure that none of the objects clash and every time we deploy a new chart we can supply a specific `values.yaml` file for that application.
 
-Now we can use `{{.Values.apiApp.name}}` in our yaml files:
+Now we can use `{{.Values.apiApp.name}}` in our yaml-s:
 
 
 api-deployment.yaml:
@@ -242,9 +242,9 @@ metadata:
 api-config.yaml
 ```
 apiVersion: v1
+kind: ConfigMap
 metadata:
   name: {{.Values.apiApp.name}}
-kind: ConfigMap
 ...
 ```
 
