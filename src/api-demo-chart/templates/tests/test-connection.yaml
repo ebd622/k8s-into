@@ -13,6 +13,6 @@ spec:
       command: [wget]
       args:
       - -O-
-      - api-service:8080
+      - api-service:8080/api/info
 
   restartPolicy: Never

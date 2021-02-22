@@ -35,28 +35,5 @@ Common labels
 */}}
 {{- define "api-demo-chart.labels" -}}
 helm.sh/chart: {{ include "api-demo-chart.chart" . }}
-{{ include "api-demo-chart.selectorLabels" . }}
-{{- if .Chart.AppVersion }}
-app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
-{{- end }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
-{{- end }}
-
-{{/*
-Selector labels
-*/}}
-{{- define "api-demo-chart.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "api-demo-chart.name" . }}
-app.kubernetes.io/instance: {{ .Release.Name }}
-{{- end }}
-
-{{/*
-Create the name of the service account to use
-*/}}
-{{- define "api-demo-chart.serviceAccountName" -}}
-{{- if .Values.serviceAccount.create }}
-{{- default (include "api-demo-chart.fullname" .) .Values.serviceAccount.name }}
-{{- else }}
-{{- default "default" .Values.serviceAccount.name }}
-{{- end }}
 {{- end }}
