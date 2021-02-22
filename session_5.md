@@ -218,7 +218,7 @@ This will make sure that none of the objects clash and every time we deploy a ne
 Now we can use `{{.Values.apiApp.name}}` in our yaml-s:
 
 
-api-deployment.yaml:
+[api-deployment.yaml](https://github.com/ebd622/k8s-into/blob/use-case_1/src/api-demo-chart/templates/api-deployment.yaml):
 ```
 apiVersion: apps/v1
 kind: Deployment
