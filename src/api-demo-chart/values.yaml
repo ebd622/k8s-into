@@ -10,4 +10,4 @@ apiApp:
   replicaCount: 1
 
 nameOverride: ""
-fullnameOverride: "vapp"
+fullnameOverride: "api-demo-helm"
