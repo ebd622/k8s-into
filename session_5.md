@@ -282,7 +282,7 @@ api-demo-chart-v2       default         1               2021-02-21 21:14:42.5354
 
 #### Use case 2: use different values to deploy a chart in T, A and P
 
-Check out the branch use-case_2:
+Check out the branch `use-case_2`:
 
 ```
 git checkout use-case_2
