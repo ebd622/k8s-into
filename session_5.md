@@ -229,7 +229,7 @@ metadata:
 ...
 ```
 
-api-service.yaml
+[api-service.yaml](https://github.com/ebd622/k8s-into/blob/use-case_1/src/api-demo-chart/templates/api-service.yaml)
 ```
 apiVersion: v1
 kind: Service
