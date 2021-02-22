@@ -24,15 +24,15 @@ public class InfoController {
         info.setApp_version(appVersion);
 
         //Set environment
-        String env = System.getenv().getOrDefault("DEPLOY_ENV", "dev");
+        String env = System.getenv().getOrDefault("DEPLOY_ENV", "none");
         info.setEnvironment(env);
 
         //Set db_conf
-        String db_conf= System.getenv().getOrDefault("DB_CONF", "db-dev");
+        String db_conf= System.getenv().getOrDefault("DB_CONF", "none");
         info.setDb_conf(db_conf);
 
         //Set db_user
-        String db_user= System.getenv().getOrDefault("DB_USER", "user-dev");
+        String db_user= System.getenv().getOrDefault("DB_USER", "none");
         info.setDb_user(db_user);
 
         return ResponseEntity.ok(info);
