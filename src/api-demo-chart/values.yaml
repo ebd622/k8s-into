@@ -9,5 +9,6 @@ apiApp:
   nodePort: 30000
   replicaCount: 1
 
+# The names are used in the template helper (_helpers.tpl)
 nameOverride: ""
 fullnameOverride: "api-demo-helm"
