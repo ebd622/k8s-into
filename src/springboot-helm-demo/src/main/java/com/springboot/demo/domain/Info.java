@@ -8,6 +8,5 @@ import lombok.Setter;
 public class Info {
     private String app_version;
     private String environment;
-    private String db_conf;
-    private String db_user;
+    private DbConfig db_properties;
 }

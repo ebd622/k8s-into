@@ -8,7 +8,7 @@
 	</parent>
 	<groupId>com.springboot.demo</groupId>
 	<artifactId>springboot-helm-demo</artifactId>
-	<version>1.0.0</version>
+	<version>2.0.0</version>
 	<name>Kubernetes:: Spring Boot:: Helm :: Demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
