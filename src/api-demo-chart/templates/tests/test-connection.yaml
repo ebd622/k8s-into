@@ -8,17 +8,11 @@ metadata:
     "helm.sh/hook": test-success
 spec:
   containers:
-    - name: test-result-app
+    - name: api-demo-test
       image: busybox
       command: [wget]
       args:
       - -O-
-      - result-service:80
-    - name: test-voting-app
-      image: busybox
-      command: [wget]
-      args:
-        - -O-
-        - api-service:80
+      - {{.Values.apiApp.name}}:8080/api/info
 
   restartPolicy: Never

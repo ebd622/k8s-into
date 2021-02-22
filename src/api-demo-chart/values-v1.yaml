@@ -14,5 +14,6 @@ apiApp:
     db_user: user-t
     deploy_env: test
 
+# The names are used in the template helper (_helpers.tpl)
 nameOverride: ""
-fullnameOverride: "vapp"
+fullnameOverride: "api-demo-helm-v1"
