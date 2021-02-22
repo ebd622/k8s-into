@@ -287,6 +287,22 @@ Check out the branch use-case_2:
 ```
 git checkout use-case_2
 ```
+Run the commands to install the chart using different values:
+
+```
+helm install api-demo-chart-t . --values values-t.yaml
+helm install api-demo-chart-a . --values values-a.yaml
+helm install api-demo-chart-p . --values values-p.yaml
+```
+
+When the application is installed you can also run tests:
+
+```
+helm test api-demo-chart-t
+helm test api-demo-chart-a
+helm test api-demo-chart-p
+```
+
 
 TODO
 
