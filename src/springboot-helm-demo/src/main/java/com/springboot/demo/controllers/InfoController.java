@@ -2,6 +2,7 @@ package com.springboot.demo.controllers;
 
 import com.springboot.demo.domain.DbConfig;
 import com.springboot.demo.domain.Info;
+import com.springboot.demo.domain.KafkaConsumer;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -24,6 +25,7 @@ public class InfoController {
         Info info = new Info();
         info.setApp_version(appVersion);
         info.setDb_properties(new DbConfig());
+        info.setKafka_consumer(new KafkaConsumer());
 
         //Set environment
         String env = System.getenv().getOrDefault("DEPLOY_ENV", "none");
@@ -36,6 +38,19 @@ public class InfoController {
         //Set db_user
         String db_user= System.getenv().getOrDefault("DB_USER", "none");
         info.getDb_properties().setDb_user(db_user);
+
+        //Set Kafka Consumer properties
+        String servers= System.getenv().getOrDefault("BOOTSTRAP_SERVERS", "none");
+        info.getKafka_consumer().setBootstrap_servers(servers);
+
+        String group= System.getenv().getOrDefault("GROUP_ID", "none");
+        info.getKafka_consumer().setGroup_id(group);
+
+        String key_s= System.getenv().getOrDefault("KEY_DESERIALIZER", "none");
+        info.getKafka_consumer().setKey_deserializer(key_s);
+
+        String value_s= System.getenv().getOrDefault("VALUE_DESERIALIZER", "none");
+        info.getKafka_consumer().setValue_deserializer(value_s);
 
         return ResponseEntity.ok(info);
     }
