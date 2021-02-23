@@ -203,17 +203,17 @@ Run the command `rollback` if you want to rollback to one of the previous releas
 helm rollback api-demo-chart 2 --dry-run
 helm rollback api-demo-chart 2
 ```
+
 ### Trigger deployment change when config changes
 
 By default, a deployment will not rollout new pods when a configmap changes. 
 
-Some applications read configuration at start up and deployment may need to rollout new pods when a configuration changes. <br/>
-So,when a configmap changes with a new values the pod in will not automatically restart to pick up these changes. 
+Some applications read configuration at start up and deployment may need to rollout new pods when a configuration changes. But when a configmap changes with a new values - the pod will not automatically restart to pick up these changes. 
 
-We can use Helm's powerful template generation capability to overcome this issue. And it allows us to forcefully roll new pods when a configmap changes. <br/>
+We can use Helm's powerful template generation capability to overcome this issue. It allows us to forcefully rollout  new pods when a configmap changes. <br/>
 With Helm we can trigger a change on deployment that will tell Kubernetes to forcefully rollout new pods and they will pick up the new configmap. 
 
-To trigger a new deployment we need to detect changes on a configmap. For this we need to add `annotations` on a deployment object (in the section `spec` related to a replicaset:
+To trigger a new deployment we need to detect changes on a configmap. For this we need to add `annotations` on a deployment object (in the section `spec` related to a replicaset):
 
 ```
     metadata:
@@ -221,7 +221,7 @@ To trigger a new deployment we need to detect changes on a configmap. For this w
       annotations:
         checksum/config: {{include (print $.Template.BasePath "/api-config.yaml") . | sha256sum}}
 ```
-This will create a checksum value of the `api-config.yaml`. Whenever this confg changes the encoding of the statement will be different. <br/>
+This will create a checksum value of the `api-config.yaml`. Whenever this confg is changed the encoding of the statement will be different. <br/>
 Here we use the `include` function, print the contents of the script and pipe it to a checksum function. Every time when configmap changes the checksum function result will be different. It will create a unique annotation on the deployment which will forcefully trigger a change in kubernetes. 
 
 ## Use Cases
