@@ -13,6 +13,8 @@ spec:
   template:
     metadata:
       name: api-demo-pod
+{{/*      annotations:*/}}
+{{/*        checksum/config: {{include (print $.Template.BasePath "/api-config.yaml") . | sha256sum}}*/}}
       labels:
         name: api-demo-pod
         app: api-demo
