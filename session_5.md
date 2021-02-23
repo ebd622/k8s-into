@@ -192,6 +192,9 @@ Run the command `rollback` if you want to rollback to one of the previous releas
 helm rollback api-demo-chart 2 --dry-run
 helm rollback api-demo-chart 2
 ```
+
+## Use Cases
+
 ### Use custom names for objects in yaml-files
 
 Let's go ahead and make our chart even more generic.
