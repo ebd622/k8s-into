@@ -273,8 +273,6 @@ Here you can find more on [Flow Control](https://helm.sh/docs/chart_template_gui
 
 ## Use Cases
 
-### Use custom names for objects in yaml-files
-
 Let's go ahead and make our chart even more generic.
 
 #### Use case 1: use the same chart to deploy different app-versions
