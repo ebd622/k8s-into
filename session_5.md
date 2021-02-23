@@ -92,7 +92,13 @@ This will create a new folder `example-app`:
 
 ## Work with Helm
 
-TODO: clone a repo
+Clone the git repo, swith to `master` and change a folder:
+
+```
+git clone https://github.com/ebd622/k8s-into.git
+git checkout master
+cd src/api-demo-chart/
+```
 
 Let's go ahead and see what Helm allows us to do.
 
