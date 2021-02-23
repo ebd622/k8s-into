@@ -136,7 +136,12 @@ You can check all the components deployed into a cluster:
 kubectl get all
 ```
 ### Run tests to check the deployment
-TODO
+
+When your chart is deployed you run the `test` command to check it:
+
+```
+helm test api-demo-chart
+```
 
 ### Values and parameters
 
