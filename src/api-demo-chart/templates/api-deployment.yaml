@@ -13,12 +13,9 @@ spec:
   template:
     metadata:
       name: api-demo-pod
-{{/*      annotations:*/}}
-{{/*        checksum/config: {{include (print $.Template.BasePath "/api-config.yaml") . | sha256sum}}*/}}
       labels:
         name: api-demo-pod
         app: api-demo
-
     spec:
       containers:
       - name: api-app
@@ -28,3 +25,14 @@ spec:
         envFrom:
         - configMapRef:
             name: api-config
+
+        {{- if .Values.deployment.resourcse.limits}}
+        resources:
+          limits:
+            memory: {{.Values.deployment.resourcse.limits.memory | default "256Mi" | quote}}
+            cpu: {{.Values.deployment.resourcse.limits.cpu | default "300m" | quote}}
+          {{- else}}
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        {{- end }}

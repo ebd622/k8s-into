@@ -13,6 +13,13 @@ apiApp:
   nodePort: 30000
   replicaCount: 1
 
+deployment:
+  resourcse:
+    limits:
+      memory: 512Mi
+      cpu: 500m
+
+
 # The names are used in the template helper (_helpers.tpl)
 nameOverride: ""
 fullnameOverride: "api-demo-helm"
