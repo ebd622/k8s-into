@@ -226,6 +226,49 @@ Here we use the `include` function, print the contents of the script and pipe it
 
 Here you can find more on [Functions and Pipelines](https://helm.sh/docs/chart_template_guide/functions_and_pipelines/#helm) in Helm.
 
+
+### Control Flows 
+Helm also allows to Control Flows. We can have `if` and `else` statements to generate more complex yaml based of values we pass in. We also can also set `defaults`.
+
+Let's say we want to enforce things like **cpu** and **memory** limits. We can do it like allow the users to set their own limits or fall back to defaults if they are not supplied. To allow this capability we can use `if` and `else` statements in Helm which are really straightforward.
+
+Checkout the branch *control_flow*
+
+[values.yaml](https://github.com/ebd622/k8s-into/blob/control_flow/src/api-demo-chart/values.yaml):
+
+```
+deployment:
+  resourcse:
+    limits:
+      memory: 512Mi
+      cpu: 500m
+
+```
+[api-deployment.yaml](https://github.com/ebd622/k8s-into/blob/control_flow/src/api-demo-chart/templates/api-deployment.yaml):
+
+```
+        {{- if .Values.deployment}}
+        resources:
+          limits:
+            memory: {{.Values.deployment.resourcse.limits.memory | default "256Mi" | quote}}
+            cpu: {{.Values.deployment.resourcse.limits.cpu | default "300m" | quote}}
+          {{- else}}
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        {{- end }}
+```
+
+When installing the chart Helm will process the logic and render a piece of code in `api-deployment.yam` into the following statement:
+
+```
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+```
+Here you can find more on [Flow Control](https://helm.sh/docs/chart_template_guide/control_structures/#helm) in Helm.
+
 ## Use Cases
 
 ### Use custom names for objects in yaml-files
