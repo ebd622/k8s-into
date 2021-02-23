@@ -2,12 +2,12 @@
 # Introduction to Helm
 
 ##### Table of Contents  
-* [Why do we need Helm](#Why do we need Helm)
-* [What is Helm](#What is Helm)
+* [Why do we need Helm](#Why-do-we-need-Helm)
+* [What is Helm](#What-is-Helm)
 * [Arcitecture](#Arcitecture)
-    * [Helm 2](#Helm 2)
-    * [Helm 3](#Helm 3)
-* [Creating your first Helm chart](#headers)
+    * [Helm 2](#Helm-2)
+    * [Helm 3](#Helm-3)
+* [Creating your first Helm chart](#Creating-your-first-Helm-chart)
 * [Work with Helm](#headers)
    * [Test your templates before installing](#headers)
    * [Install a chart](#headers)
