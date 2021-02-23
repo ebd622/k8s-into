@@ -2,11 +2,11 @@
 # Introduction to Helm
 
 ##### Table of Contents  
-[Why do we need Helm](#headers)
-[What is Helm](#headers)
-[Arcitecture](#headers)
-* [Helm 2](#headers)
-* [Helm 3](#headers)
+* [Why do we need Helm](#headers)
+* [What is Helm](#headers)
+* [Arcitecture](#headers)
+    * [Helm 2](#headers)
+    * [Helm 3](#headers)
 
 
 
