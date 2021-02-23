@@ -7,24 +7,23 @@
 * [Arcitecture](#headers)
     * [Helm 2](#headers)
     * [Helm 3](#headers)
+* [Creating your first Helm chart](#headers)
+* [Work with Helm](#headers)
+   * [Test your templates before installing](#headers)
+   * [Install a chart](#headers)
+   * [List releases](#headers)
+   * [Run tests to check the deployment](#headers)
+   * [Values and parameters](#headers)
+   * [Keep track on releases](#headers)
+   * [Trigger deployment change when config changes](#headers)
+   * [Control Flows ](#headers)
+* [Use Cases](#headers)
+   * [Use case 1: use the same chart to deploy different app-versions](#headers)
+   * [Use case 2: use different values to deploy a chart in T, A and P](#headers)
 
 
 
 
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
-
-
-- Why do we need Helm
-- What is Helm
-- Helm Architecture
-- Creating your first Helm chart 
-- Helm templating
-- Values and parameters
-- Installing and Upgrading a chart
-- Control flows
-- Helm Repositories
 
 ## Why do we need Helm
 In Kubernetes we describe everything what we do with yaml-files. These yaml-fails represent objects such as deployments, pods, services and so on. The objects are represented in **declarative** way. It means we tell Kubernetes exactly what we need and Kubernetes makes it happen. 
@@ -51,7 +50,7 @@ Once we have this chart we can effectively reuse all yaml-s by injecting paramet
 
 First we have to distinguish Helm 2 and Helm 3. 
 
-#### Helm 2
+### Helm 2
 In  the version 2 Helm installation comes in two parts: a ***Helm Client*** (CLI) and a server called ***Tiller***:
 
 <img src="images/Helm2-architecture.PNG" width="60%">
@@ -69,7 +68,7 @@ But Helm 2 architecture has a big caveat because Tiller has too much power insid
 This makes a big security issue. This is a reason why Tiller has been removed in Helm 3.
 
 
-#### Helm 3
+### Helm 3
 Helm 3 uses the client-only architecture:
 
 <img src="images/Helm3-architecture.PNG" width="60%">
@@ -137,7 +136,7 @@ helm install api-demo-chart .
 ```
 Helm will install everything what is a part of the chart to a Kubernetes cluster.
 
-#### List releases
+### List releases
 
 Every time Helm deploys a chart it will create a release where it tracks the revision. The command `list` can be used to check revisions:
 
@@ -290,7 +289,7 @@ Here you can find more on [Flow Control](https://helm.sh/docs/chart_template_gui
 
 Let's go ahead and make our chart even more generic.
 
-#### Use case 1: use the same chart to deploy different app-versions
+### Use case 1: use the same chart to deploy different app-versions
 
 One think that we can do to make our chart more generic and reusable is to inject custom names for all kubernetes objects in yaml-s.
 
@@ -374,7 +373,7 @@ api-demo-chart-v2       default         1               2021-02-21 21:14:42.5354
 
 ```
 
-#### Use case 2: use different values to deploy a chart in T, A and P
+### Use case 2: use different values to deploy a chart in T, A and P
 
 Check out the branch `use-case_2`:
 
