@@ -244,6 +244,8 @@ deployment:
       cpu: 500m
 
 ```
+(Meaning of `cpu` and `memory` units can be found in [Resource units in Kubernetes](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#resource-units-in-kubernetes)) <br/>
+
 [api-deployment.yaml](https://github.com/ebd622/k8s-into/blob/control_flow/src/api-demo-chart/templates/api-deployment.yaml):
 
 ```
