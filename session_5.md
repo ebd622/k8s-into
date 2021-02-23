@@ -224,6 +224,8 @@ To trigger a new deployment we need to detect changes on a configmap. For this w
 This will create a checksum value of the `api-config.yaml`. Whenever this confg is changed the encoding of the statement will be different. <br/>
 Here we use the `include` function, print the contents of the script and pipe it to a checksum function. Every time when configmap changes the checksum function result will be different. It will create a unique annotation on the deployment which will forcefully trigger a change in kubernetes. 
 
+Here you can find more on [Functions and Pipelines](https://helm.sh/docs/chart_template_guide/functions_and_pipelines/#helm) in Helm.
+
 ## Use Cases
 
 ### Use custom names for objects in yaml-files
