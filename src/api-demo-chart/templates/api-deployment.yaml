@@ -26,7 +26,7 @@ spec:
         - configMapRef:
             name: api-config
 
-        {{- if .Values.deployment.resourcse.limits}}
+        {{- if .Values.deployment}}
         resources:
           limits:
             memory: {{.Values.deployment.resourcse.limits.memory | default "256Mi" | quote}}
