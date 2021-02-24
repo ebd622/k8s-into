@@ -25,8 +25,6 @@
 
 
 
-
-
 ## Why do we need Helm
 In Kubernetes we describe everything what we do with yaml-files. These yaml-fails represent objects such as deployments, pods, services and so on. The objects are represented in **declarative** way. It means we tell Kubernetes exactly what we need and Kubernetes makes it happen. 
 
@@ -95,6 +93,70 @@ There are many different public repositories available for us, here are just a f
 * https://bitnami.com/stacks/helm
 
 Using a simple Helm `install` command we can reuse a configuration that someone else has already made without additional effort from our side. Sometimes that "someone" is even a company that created an application.
+
+As an example let's install the monitoring tool Prometheus & Grafana on our local Kubernetes cluster.
+
+```
+helm search repo list
+```
+
+Add repository of stable charts:
+```
+helm repo add stable https://charts.helm.sh/stable
+```
+
+Search for all stable charts in the repo:
+```
+helm search repo stable
+```
+
+Search for the Prometheus chart:
+```
+helm search repo stable/prometheus
+```
+
+We will install the Prometheus Operator for Kubernetes that provides easy monitoring definitions for Kubernetes services and deployment and management of Prometheus instances:
+```
+helm install --generate-name stable/prometheus-operator
+```
+
+Once the chart is installed, let's check it and also Kubernetes objects: 
+
+```
+helm list
+kubectl get pods
+kubectl get svc
+```
+
+Now Pometheus & Grafana services are available within a cluster (`ClusterIP` is the default Kubernetes service), therefore they can not be accessed outside of cluster.
+
+In order to access the web GUI from outside of cluster, we need to change default `ClusterIP` services to `NodePort`:
+
+```
+kubectl edit svc prometheus-operator-xxxxxxx-prometheus
+```
+
+Let's check the updated service and find a NodePort number assigned by the cluster:
+```
+$ kubectl get svc prometheus-operator-xxxxxxx-grafana
+
+NAME                                     TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+prometheus-operator-xxxxxxx-grafana   NodePort   10.107.36.148   <none>        80:30393/TCP   6m36s
+```
+(Note: a port number is assigned by a Kubernetes cluster, it can be always different)
+
+Now we can access Grafana from our local environment:
+```
+http://localhost:30393
+```
+
+Default credentials for Grafana:
+```
+username: admin
+password: prom-operator
+```
+
+The same exercise can be done with Prometheus: edit the service `prometheus-operator-xxxxxx-prometheus` to replace `ClusterIP` with `NodePort`, check a port number and request Prometheus GUI from your browser.
 
 
 ## Work with Helm
