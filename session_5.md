@@ -10,6 +10,7 @@
 * [Sharing Helm Charts](#sharing-helm-charts)
 * [Work with Helm](#headers)
    * [Creating your first Helm chart](#Creating-your-first-Helm-chart)
+   * [API Demo App architecture](#api-demo-app-architecture)
    * [Clone the git repo](#clone-the-git-repo)
    * [Test your templates before installing](#headers)
    * [Install a chart](#headers)
@@ -189,9 +190,9 @@ This will create a new folder `example-app`:
     └── values.yaml					# The default values for your templates
 ```    
 ### API Demo App architecture
-Further we will  play with API Demo, the API is very simple:
+Further we will  play with a very simpe API Demo App.
 
-<img src="images/api-demo-app.svg" width="50%" >
+<img src="images/api-demo-app.svg" width="60%" >
 
 ### Clone the git repo
 
