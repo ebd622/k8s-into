@@ -115,7 +115,7 @@ Search for the Prometheus chart:
 helm search repo stable/prometheus
 ```
 
-We will install the Prometheus Operator for Kubernetes that provides easy monitoring definitions for Kubernetes services and deployment and management of Prometheus instances:
+We will install the `Prometheus Operator for Kubernetes` that provides easy monitoring definitions for Kubernetes services and deployment and management of Prometheus instances:
 ```
 helm install --generate-name stable/prometheus-operator
 ```
