@@ -194,6 +194,8 @@ Further we will  play with a very simpe API Demo App.
 
 <img src="images/api-demo-app.svg" width="70%" >
 
+
+
 ### Clone the git repo
 
 First let's create clone the git repo, swith to `master` and change a folder:
