@@ -190,7 +190,7 @@ This will create a new folder `example-app`:
 ```    
 ### API Demo App
 
-<img src="images/api-demo-app.svg" width="60%">
+<img src="images/api-demo-app.svg" width="60%" height="50%" style="float:middle">
 
 ### Clone the git repo
 
