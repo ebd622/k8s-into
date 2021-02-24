@@ -140,8 +140,8 @@ Let's check the updated service and find a NodePort number assigned by the clust
 ```
 $ kubectl get svc prometheus-operator-xxxxxxx-grafana
 
-NAME                                     TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
-prometheus-operator-xxxxxxx-grafana   NodePort   10.107.36.148   <none>        80:30393/TCP   6m36s
+NAME                                      TYPE      CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+prometheus-operator-xxxxxxx-grafana   NodePort   10.107.36.148      <none>        80:30393/TCP   6m36s
 ```
 (Note: a port number is assigned by a Kubernetes cluster, it can be always different)
 
