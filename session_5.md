@@ -194,7 +194,50 @@ Further we will  play with a very simpe API Demo App.
 
 <img src="images/api-demo-app.svg" width="70%" >
 
+The API exposes just one end point `/api/info` to retrieve a configuration details of the App. The details are provided in JSON-format.
 
+The applications is dockerized, the image has been uploaded into the Docker Hub.
+
+There are three different versions of the API, returned JSON is also different for every version. The versions have their own tags in the Docker Hub.
+
+
+springboot-helm-demo:1.0.0
+```
+{
+app_version: "1.0.0",
+environment: "test",
+db_conf: "jdbc:mysql://server-t:3306/",
+db_user: "user-t"
+}
+```
+springboot-helm-demo:2.0.0
+```
+{
+app_version: "2.0.0",
+environment: "test",
+	db_properties: {
+		db_conf: "jdbc:mysql://server-t:3306/",
+		db_user: "user-t"
+	}
+}
+```
+springboot-helm-demo:3.0.0
+```
+{
+app_version: "3.0.0",
+environment: "test",
+	db_properties: {
+		db_conf: "jdbc:mysql://server-t:3306/",
+		db_user: "user-t"
+	},
+	kafka_consumer: {
+		bootstrap_servers: "none",
+		group_id: "none",
+		key_deserializer: "none",
+		value_deserializer: "none"
+	}
+}
+```
 
 ### Clone the git repo
 
