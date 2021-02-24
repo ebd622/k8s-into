@@ -192,7 +192,7 @@ This will create a new folder `example-app`:
 ### API Demo App architecture
 Further we will  play with a very simpe API Demo App.
 
-<img src="images/api-demo-app.svg" width="60%" >
+<img src="images/api-demo-app.svg" width="70%" >
 
 ### Clone the git repo
 
