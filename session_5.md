@@ -9,7 +9,7 @@
     * [Helm 3](#Helm-3)
 * [Work with Helm](#headers)
    * [Creating your first Helm chart](#Creating-your-first-Helm-chart)
-   * [Test and install charts](Test-and-install-charts)
+   * [Clone the git repo](#clone the git repo)
    * [Test your templates before installing](#headers)
    * [Install a chart](#headers)
    * [List releases](#headers)
@@ -108,10 +108,9 @@ This will create a new folder `example-app`:
     └── values.yaml					# The default values for your templates
 ```    
 
+### Clone the git repo
 
-### Test and install charts
-
-Clone the git repo, swith to `master` and change a folder:
+First let's create clone the git repo, swith to `master` and change a folder:
 
 ```
 git clone https://github.com/ebd622/k8s-into.git
