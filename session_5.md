@@ -9,7 +9,7 @@
     * [Helm 3](#Helm-3)
 * [Work with Helm](#headers)
    * [Creating your first Helm chart](#Creating-your-first-Helm-chart)
-   * [Clone the git repo](#clone the git repo)
+   * [Clone the git repo](#clone-the-git-repo)
    * [Test your templates before installing](#headers)
    * [Install a chart](#headers)
    * [List releases](#headers)
