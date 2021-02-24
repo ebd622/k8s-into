@@ -18,7 +18,7 @@
    * [Keep track on releases](#headers)
    * [Trigger deployment change when config changes](#headers)
    * [Control Flows ](#headers)
-* [Sharing Helm Charts](Sharing-Helm-Charts)
+* [Sharing Helm Charts](#sharing-helm-charts)
 * [Use Cases](#Use-Cases)
    * [Use case 1: use the same chart to deploy different app-versions](#headers)
    * [Use case 2: use different values to deploy a chart in T, A and P](#headers)
