@@ -7,8 +7,9 @@
 * [Arcitecture](#Arcitecture)
     * [Helm 2](#Helm-2)
     * [Helm 3](#Helm-3)
-* [Creating your first Helm chart](#Creating-your-first-Helm-chart)
 * [Work with Helm](#headers)
+   * [Creating your first Helm chart](#Creating-your-first-Helm-chart)
+   * [Test and install charts](Test-and-install-charts)
    * [Test your templates before installing](#headers)
    * [Install a chart](#headers)
    * [List releases](#headers)
@@ -17,7 +18,8 @@
    * [Keep track on releases](#headers)
    * [Trigger deployment change when config changes](#headers)
    * [Control Flows ](#headers)
-* [Use Cases](#headers)
+* [Sharing Helm Charts](Sharing-Helm-Charts)
+* [Use Cases](#Use-Cases)
    * [Use case 1: use the same chart to deploy different app-versions](#headers)
    * [Use case 2: use different values to deploy a chart in T, A and P](#headers)
 
@@ -75,7 +77,10 @@ Helm 3 uses the client-only architecture:
 
 Removing Tiller has solved a security concern making Helm more secure. But this also makes *Release Management* feature more challenging. 
 
-## Creating your first Helm chart 
+
+## Work with Helm
+
+### Creating your first Helm chart 
 
 Helm chart is a *unit of deployment*, it is made up with a set of yaml files. We can have a chart for microservices or any software like Redis, MySQL, Prometeus and so on.
 
@@ -104,7 +109,7 @@ This will create a new folder `example-app`:
 ```    
 
 
-## Work with Helm
+### Test and install charts
 
 Clone the git repo, swith to `master` and change a folder:
 
@@ -284,6 +289,26 @@ When installing the chart Helm will process the logic and render a piece of code
             cpu: "500m"
 ```
 Here you can find more on [Flow Control](https://helm.sh/docs/chart_template_guide/control_structures/#helm) in Helm.
+
+## Sharing Helm Charts
+
+Another powerful feature of Helm is *sharing Charts via repositories*. This is one of a reason why Helm became so popular. 
+
+Normally when we use Helm a generic work flow looks like this:
+
+* Create your own Helm Charts;
+* Push them into a Helm Repository (public or private ) to share it with others;
+* Download and use existing charts when you need them;
+
+Commonly used deployments like *DB Apps, ElasticSearch, Monitoring Apps* have a complex setup. But they all have charts already available in some Helm repository. 
+
+There are many different public repositories available for us, here are just a few of them:
+
+* https://charts.helm.sh/stable
+* https://bitnami.com/stacks/helm
+
+Using a simple Helm `install` command we can reuse a configuration that someone else has already made without additional effort from our side. Sometimes that "someone" is even a company that created an application.
+
 
 ## Use Cases
 
