@@ -188,6 +188,9 @@ This will create a new folder `example-app`:
     │       └── test-connection.yaml
     └── values.yaml					# The default values for your templates
 ```    
+### API Demo App
+
+<img src="images/api-demo-app.swg" width="60%">
 
 ### Clone the git repo
 
