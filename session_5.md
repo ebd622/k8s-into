@@ -380,7 +380,7 @@ Helm also allows to Control Flows. We can have `if` and `else` statements to gen
 
 Let's say we want to enforce things like **cpu** and **memory** limits. We can do it like allow the users to set their own limits or fall back to defaults if they are not supplied. To allow this capability we can use `if` and `else` statements in Helm which are really straightforward.
 
-Checkout the branch *control_flow*
+Checkout the branch `control_flow`
 
 [values.yaml](https://github.com/ebd622/k8s-into/blob/control_flow/src/api-demo-chart/values.yaml):
 
