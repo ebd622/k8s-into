@@ -327,7 +327,7 @@ Helm will also upgrade our release.
 When you simply need to override one or two values in your deployment you can do it over th command line:
 
 ```
-helm upgrade api-demo-chart . --set apiApp.image.tag=2.0.0
+helm upgrade api-demo-chart . --set apiApp.image.tag=3.0.0
 ```
 
 In this case you can use a command line instead of using a values-file.
