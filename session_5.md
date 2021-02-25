@@ -534,14 +534,14 @@ helm test api-demo-chart-p
 
 Let's imagine you have implemented additional functionality in your API and now need to connect API to Kafka. For this you have to update your Helm Chart to apply a configuration for Kafka consumer. 
 
-##### What needs to be done
+##### What needs to be done:
 * update the existing chart and apply new config-parameters for Kafka consumer;
 * install the updated chart;
 * make a call to `api/info` to check new configuration
 
-##### Step-by-step implementation
+##### Step-by-step implementation:
 - Change `values.yaml`: upgrade the image-tag up to `3.0.0`
-- Change `api-config.yaml` and `values.yaml`: add new data in the configmap:
+- Change `api-config.yaml` and `values.yaml`: add new data:
 	* BOOTSTRAP_SERVERS = kafka-broker1:9092
 	* GROUP_ID = API_GROUP_SEARCH
 	* KEY_DESERIALIZER = StringDeserializerKey
