@@ -1,2 +1,2 @@
-1. Get the voting-app URL: http://<CLUSTER-IP>:{{.Values.apiApp.nodePort}}/
+1. Get the API-demo-app URL: http://<CLUSTER-IP>:{{.Values.apiApp.nodePort}}/
 
