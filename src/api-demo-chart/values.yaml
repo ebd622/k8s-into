@@ -7,9 +7,9 @@ apiApp:
     repository: ebd622/springboot-helm-demo
     tag: 1.0.0
   config:
+    deploy_env: test
     db_conf: jdbc:mysql://server-t:3306/
     db_user: user-t
-    deploy_env: test
   nodePort: 30000
   replicaCount: 1
 
