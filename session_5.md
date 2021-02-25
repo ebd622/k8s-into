@@ -22,7 +22,7 @@
    * [Control Flows ](#headers)
 * [Use Cases](#Use-Cases)
    * [Use case 1: use the same chart to deploy different app-versions](#use-case-1-use-the-same-chart-to-deploy-different-app-versions)
-   * [Use case 2: use different values to deploy a chart in T, A and P](#Use-case-2:-use-different-values-to-deploy-a-chart-in-T,-A-and P)
+   * [Use case 2: use different values to deploy a chart in T, A and P](#use-case-2-use-different-values-to-deploy-a-chart-in-t-a-and-p)
 
 
 
