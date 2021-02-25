@@ -21,8 +21,8 @@
    * [Trigger deployment change when config changes](#headers)
    * [Control Flows ](#headers)
 * [Use Cases](#Use-Cases)
-   * [Use case 1: use the same chart to deploy different app-versions](#headers)
-   * [Use case 2: use different values to deploy a chart in T, A and P](#headers)
+   * [Use case 1: use the same chart to deploy different app-versions](#Use-case-1:-use-the-same-chart-to-deploy-different-app-versions)
+   * [Use case 2: use different values to deploy a chart in T, A and P](#Use-case-2:-use-different-values-to-deploy-a-chart-in-T,-A-and P)
 
 
 
