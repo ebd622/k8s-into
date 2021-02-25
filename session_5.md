@@ -536,7 +536,7 @@ Let's imagine you have implemented additional functionality in your API and now 
 
 ##### What needs to be done
 * update the existing chart and apply new config-parameters for Kafka consumer;
-* install the updated new chart;
+* install the updated chart;
 * make a call to `api/info` to check new configuration
 
 ##### Step-by-step implementation
