@@ -530,6 +530,40 @@ helm test api-demo-chart-a
 helm test api-demo-chart-p
 ```
 
+## Assignment
 
-TODO
+Let's imagine you have implemented additional functionality in your API and now need to connect API to Kafka. For this you have to update your Helm Chart to apply a configuration for Kafka consumer. 
 
+##### What needs to be done
+* update the existing chart and apply new config-parameters for Kafka consumer;
+* install the updated new chart;
+* make a call to `api/info` to check new configuration
+
+##### Step-by-step implementation
+- Change `values.yaml`: upgrade the image-tag up to `3.0.0`
+- Change `api-config.yaml` and `values.yaml`: add new data in the configmap:
+	* BOOTSTRAP_SERVERS = kafka-broker1:9092
+	* GROUP_ID = API_GROUP_SEARCH
+	* KEY_DESERIALIZER = StringDeserializerKey
+	* VALUE_DESERIALIZER = StringDeserializerValue
+
+- Install the chart;
+- Check the deployment (List installed charts, make sure that a deployed `pod` is up and running) on a cluster;
+- Check the updated configuration from a browser (`http://<CLUSTER_IP>:30000/api/info`). The expected result should be like this:
+
+```
+{
+}
+```
+
+- Change the value of `GROUP_ID` (either in `values.yaml` or in command line)
+	* GROUP_ID = API_GROUP_SEARCH_INDEX
+
+- Make sure that a new configuration is picked up by the API (see [Trigger deployment change when config changes](#trigger-deployment-change-when-config-changes));
+- Check the new configuration in a browser;
+- Check a `history`  of releases;
+- Roll back a release to a previous revision;
+- Check the configuration in a browser (should be `GROUP_ID: API_GROUP_SEARCH`);
+- Uninstall the chart
+
+(Checkout the branch `assignment` to see a solution)
