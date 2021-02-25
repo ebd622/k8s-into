@@ -553,6 +553,18 @@ Let's imagine you have implemented additional functionality in your API and now 
 
 ```
 {
+"app_version": "3.0.0",
+"environment": "test",
+	"db_properties": {
+		"db_conf": "jdbc:mysql://server-t:3306/",
+		"db_user": "user-t"
+	},
+	"kafka_consumer": {
+		"bootstrap_servers": "kafka-broker1:9092",
+		"group_id": "API_GROUP_SEARCH",
+		"key_deserializer": "StringDeserializerKey",
+		"value_deserializer": "StringDeserializerValue"
+	}
 }
 ```
 
