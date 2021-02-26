@@ -8,7 +8,7 @@
     * [Helm 2](#Helm-2)
     * [Helm 3](#Helm-3)
 * [Sharing Helm Charts](#sharing-helm-charts)
-* [Work with Helm](#headers)
+* [Work with Helm](#Work-with-Helm)
    * [Creating your first Helm chart](#Creating-your-first-Helm-chart)
    * [API Demo App architecture](#api-demo-app-architecture)
    * [Clone the git repo](#clone-the-git-repo)
