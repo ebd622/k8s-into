@@ -6,3 +6,5 @@ The [Release Notes](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-releas
 
 <img src="images/kub_docker.png" width="80%">
 
+
+[Kubernetes is dropping Docker support - What does it mean for YOU?](https://www.youtube.com/watch?v=7KUdmFyefSA)
