@@ -13,11 +13,11 @@ This  raises some  questions:
 
 Watch this short video (~12 min) to get answers:
 
-[Kubernetes is dropping Docker support - What does it mean for YOU?](https://www.youtube.com/watch?v=7KUdmFyefSA)
-
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=7KUdmFyefSA
 " target="_blank"><img src="http://img.youtube.com/vi/7KUdmFyefSA/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+
 
 #### Some Other resources:
 * [Don't Panic: Kubernetes and Docker](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/)
