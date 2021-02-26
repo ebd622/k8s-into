@@ -194,6 +194,8 @@ Further we will  play with a very simpe API Demo App.
 
 <img src="images/api-demo-app.svg" width="70%" >
 
+<img src="images/api-demo-app-arch.svg" width="70%" >
+
 The API exposes just one end point `/api/info` to retrieve a configuration details of the App. The details are provided in JSON-format.
 
 The applications is dockerized, the image has been pushed into the Docker Hub.
