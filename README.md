@@ -19,6 +19,7 @@ These is an introduction of Kuberntetes and hand-on exercises prepared for Chapt
 * [Certified Kubernetes Application Developer (CKAD) with Tests](https://www.udemy.com/course/certified-kubernetes-application-developer/) - Udemy cource
 * [Certified Kubernetes Administrator (CKA) with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/) - Udemy cource
 * [CKAD-exercises](https://github.com/dgkanatsios/CKAD-exercises)
+* [Kubernetes deprecates Docker](https://github.com/ebd622/k8s-into/blob/master/kub_docker.md)
 * [Helm](https://helm.sh/) - The package manager for Kubernetes
 
 
