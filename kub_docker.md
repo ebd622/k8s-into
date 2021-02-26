@@ -7,8 +7,9 @@ The [Release Notes](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-releas
 <img src="images/kub_docker.png" width="80%">
 
 This  raises some  questions:
-* What does it mean for you as a Kubernetes user or administrator?
+* What does it mean for us as a Kubernetes user or administrator?
 * Who is impacted?
+* Do we need to take an action?
 * ???
 
 Watch this short video (just 12.21 min) to get answers:
