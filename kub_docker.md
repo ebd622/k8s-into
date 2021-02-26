@@ -18,4 +18,4 @@ Watch this short video (~12 min) to get answers:
 
 #### Some Other resources:
 * [Don't Panic: Kubernetes and Docker](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/)
-* 
+* [Kubernetes 1.20 is deprecating Docker Runtime](https://octopus.com/blog/kubernetes-1-20-deprecating-docker-runtime#kubernetes-1-20-is-deprecating-docker-runtime-what-does-this-mea)
