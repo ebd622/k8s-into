@@ -19,7 +19,7 @@ alt="IMAGE ALT TEXT HERE" width="360" height="270" border="10" /></a>
 
 This is a one from many comments under the video:
 
-<img src="images/comment.PNG" width="40%">
+<img src="images/comment.PNG" width="50%">
 
 #### Some Other resources:
 * [Don't Panic: Kubernetes and Docker](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/)
