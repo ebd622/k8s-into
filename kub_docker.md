@@ -15,7 +15,7 @@ Watch this short video (just 12.21 min) to get answers:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=7KUdmFyefSA
 " target="_blank"><img src="http://img.youtube.com/vi/7KUdmFyefSA/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="468" height="208" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="468" height="351" border="10" /></a>
 
 This is a one from many comments under the video:
 
