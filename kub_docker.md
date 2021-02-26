@@ -11,7 +11,7 @@ This  raises some  questions:
 * Who is impacted?
 * ???
 
-Watch this short video (~12 min) to get answers:
+Watch this short video (12.21 min) to get answers:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=7KUdmFyefSA
 " target="_blank"><img src="http://img.youtube.com/vi/7KUdmFyefSA/0.jpg" 
@@ -19,7 +19,7 @@ alt="IMAGE ALT TEXT HERE" width="360" height="270" border="10" /></a>
 
 This is a one from many comments under the video:
 
-<img src="images/comment.PNG" width="60%">
+<img src="images/comment.PNG" width="40%">
 
 #### Some Other resources:
 * [Don't Panic: Kubernetes and Docker](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/)
