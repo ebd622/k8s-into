@@ -101,7 +101,7 @@ As an example let's install the monitoring tool Prometheus & Grafana on our loca
 helm search repo list
 ```
 
-Add repository of stable charts:
+Add the repository of stable charts:
 ```
 helm repo add stable https://charts.helm.sh/stable
 ```
