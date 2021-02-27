@@ -198,7 +198,7 @@ The API exposes just one end point `/api/info` to retrieve a configuration detai
 
 It is a spring-boot based applicarion. It is dockerized, the image has been pushed into the Docker Hub.
 
-There are three different versions of the API, returned JSON is also different for every version. The versions have their own tags in the Docker Hub.
+There are three different versions of the API, returned JSON is also different for every version. The versions have their own [tags](https://hub.docker.com/r/ebd622/springboot-helm-demo/tags?page=1&ordering=last_updated) in the Docker Hub.
 
 
 springboot-helm-demo:[1.0.0](https://hub.docker.com/layers/ebd622/springboot-helm-demo/1.0.0/images/sha256-3862163f6cb7f1dab75049d8fe07bd5add8097b81e77f56c5ee26edea1641008?context=explore)
