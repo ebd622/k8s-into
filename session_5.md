@@ -196,7 +196,7 @@ Further we will  play with a very simpe API Demo App.
 
 The API exposes just one end point `/api/info` to retrieve a configuration details of the App. The details are provided in JSON-format.
 
-The applications is dockerized, the image has been pushed into the Docker Hub.
+It is a spring-boot based applicarion. It is dockerized, the image has been pushed into the Docker Hub.
 
 There are three different versions of the API, returned JSON is also different for every version. The versions have their own tags in the Docker Hub.
 
