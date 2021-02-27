@@ -201,7 +201,7 @@ It is a spring-boot based applicarion. It is dockerized, the image has been push
 There are three different versions of the API, returned JSON is also different for every version. The versions have their own tags in the Docker Hub.
 
 
-springboot-helm-demo:1.0.0
+springboot-helm-demo:[1.0.0](https://hub.docker.com/layers/ebd622/springboot-helm-demo/1.0.0/images/sha256-3862163f6cb7f1dab75049d8fe07bd5add8097b81e77f56c5ee26edea1641008?context=explore)
 ```
 {
 app_version: "1.0.0",
@@ -210,7 +210,7 @@ db_conf: "jdbc:mysql://server-t:3306/",
 db_user: "user-t"
 }
 ```
-springboot-helm-demo:2.0.0
+springboot-helm-demo:[2.0.0](https://hub.docker.com/layers/ebd622/springboot-helm-demo/2.0.0/images/sha256-a673be10e9819a442659fd4f8908f85e2aef5230b43f87f5eb9b42d9b9fb0339?context=explore)
 ```
 {
 app_version: "2.0.0",
@@ -221,7 +221,7 @@ environment: "test",
 	}
 }
 ```
-springboot-helm-demo:3.0.0
+springboot-helm-demo:[3.0.0](https://hub.docker.com/layers/ebd622/springboot-helm-demo/3.0.0/images/sha256-fe203c0d23b006bb3062d8eb4460fa6ee643dde0fe45ef9509337420d9c6cd5c?context=explore)
 ```
 {
 app_version: "3.0.0",
