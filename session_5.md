@@ -352,7 +352,6 @@ helm history api-demo-chart
 
 Run the command `rollback` if you want to rollback to one of the previous releases:
 ```
-helm rollback api-demo-chart 2 --dry-run
 helm rollback api-demo-chart 2
 ```
 
