@@ -147,7 +147,7 @@ prometheus-operator-xxxxxxx-grafana   NodePort   10.107.36.148      <none>      
 
 Now we can access Grafana from our local environment:
 ```
-http://localhost:30393
+http://<CLUSTER_IP>:30393
 ```
 
 Default credentials for Grafana:
