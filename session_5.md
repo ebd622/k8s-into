@@ -471,7 +471,7 @@ metadata:
 ...
 ```
 
-api-config.yaml
+[api-config.yaml](https://github.com/ebd622/k8s-into/blob/use-case_1/src/api-demo-chart/templates/api-config.yaml)
 ```
 apiVersion: v1
 kind: ConfigMap
