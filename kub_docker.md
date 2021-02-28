@@ -7,7 +7,7 @@ The [Release Notes](https://kubernetes.io/docs/setup/release/notes/) says that K
 <img src="images/kub_docker.png" width="80%">
 
 This  raises some  questions:
-* What does it mean for us as a Kubernetes user or administrator?
+* What does it mean for Dev or DevOps engineers?
 * Who is impacted?
 * Do we need to take an action?
 * ???
