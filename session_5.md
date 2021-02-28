@@ -269,6 +269,11 @@ helm install api-demo-chart .
 ```
 Helm will install everything what is a part of the chart to a Kubernetes cluster.
 
+Now you can access your API via URL:
+```
+http://<CLUSTER_IP>:30000/api/info
+```
+
 ### List releases
 
 Every time Helm deploys a chart it will create a release where it tracks the revision. The command `list` can be used to check revisions:
