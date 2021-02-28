@@ -299,7 +299,7 @@ helm test api-demo-chart
 
 Values file and the parameter injection allows us to inject values into our chart making it reusable. 
 
-api-deployment.yaml:
+[api-deployment.yaml](https://github.com/ebd622/k8s-into/blob/master/src/api-demo-chart/templates/api-deployment.yaml):
 ``` javascript 
     spec:
       containers:
@@ -312,7 +312,7 @@ api-deployment.yaml:
             name: api-config
 ```
 
-values.yaml:
+[values.yaml](https://github.com/ebd622/k8s-into/blob/master/src/api-demo-chart/values.yaml):
 ```
 apiApp:
   image:
