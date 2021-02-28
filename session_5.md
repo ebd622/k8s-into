@@ -1,4 +1,3 @@
-(under construction)
 # Introduction to Helm
 
 ##### Table of Contents  
