@@ -11,7 +11,7 @@
    * [Creating your first Helm chart](#Creating-your-first-Helm-chart)
    * [API Demo App architecture](#api-demo-app-architecture)
    * [Clone the git repo](#clone-the-git-repo)
-   * [Test your templates before installing](#headers)
+   * [Test your templates before installing](#Test-your-templates-before-installing)
    * [Install a chart](#headers)
    * [List releases](#headers)
    * [Run tests to check the deployment](#headers)
