@@ -37,7 +37,7 @@ In over time these yaml-s may become hard to manage. And this is where Helm come
 ## What is Helm
 Helm is a package manager for Kubernetes. It is maintained by the [CNCF](https://cncf.io/) - in collaboration with  Microsoft,  Google,  [Bitnami](https://bitnami.com/) and the Helm contributor community. We can think of Helm as *apt*, *yum* or *Homebrew* for Kubernetes.
 
-Helm allows up to bring all yaml-files together in what's called a ***Chart***. A chart can have a *name*, a *description* and a *version*. 
+Helm allows us to bring all yaml-files together in what's called a ***Chart***. A chart can have a *name*, a *description* and a *version*. 
 
 A chart groups all yaml-s together in a folder called ***templates***. To make this chart reusable we have the ability to inject values as parameters. We can deploy a chart and inject a name which we can use in our deployment, for example APP-1. We can reuse this chart and deploy it into the same Kubernetes cluster or somewhere else with another name - APP-2. 
 
