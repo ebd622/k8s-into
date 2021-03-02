@@ -483,7 +483,7 @@ Now our chart is more generic and we can deploy multiple instances of the chart.
 
 For example we have two value-files with different names:
 
-* [values-v1.yaml(https://github.com/ebd622/k8s-into/blob/use-case_1/src/api-demo-chart/values-v1.yaml):  with the application name `api-demo-v1`
+* [values-v1.yaml](https://github.com/ebd622/k8s-into/blob/use-case_1/src/api-demo-chart/values-v1.yaml):  with the application name `api-demo-v1`
 * [values-v2.yaml](https://github.com/ebd622/k8s-into/blob/use-case_1/src/api-demo-chart/values-v2.yaml):  with the application name `api-demo-v2`
 
 Let's install and check the chart.
