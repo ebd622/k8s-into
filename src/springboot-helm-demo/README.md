@@ -2,7 +2,7 @@
 
 # Springboot Helm demo
 
-This is a simple Springboot API-application developed for Helm-demo session.
+This is a simple Springboot API-application developed for the [Helm-demo](https://github.com/ebd622/k8s-into/blob/master/session_5.md) session.
 
 The application exposes the end point:
 
