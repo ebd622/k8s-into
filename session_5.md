@@ -517,6 +517,8 @@ Check out the branch `use-case_2`:
 ```
 git checkout use-case_2
 ```
+Different `values-x.yaml` can be used to deploy the application in defferent environment. 
+
 Run the commands to install the chart using different values:
 
 ```
