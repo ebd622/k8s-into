@@ -517,7 +517,7 @@ Check out the branch `use-case_2`:
 ```
 git checkout use-case_2
 ```
-Different `values-x.yaml` files can be used to deploy the application in defferent environment. For example, we may have values-t.yamlm values-a.yaml and values-p.yaml to deploy the application into T, A and P. The same template-files will be used.
+Different `values-x.yaml` files can be used to deploy the application in defferent environment. For example, we may have environment specific value-files (values-t.yaml, values-a.yaml and values-p.yaml) to deploy the application into T, A and P. At the same time we will use "generic" template-files to deploy the appication.
 
 Run the commands to install the chart using different values:
 
