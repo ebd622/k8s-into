@@ -517,7 +517,13 @@ Check out the branch `use-case_2`:
 ```
 git checkout use-case_2
 ```
-Different `values-x.yaml` files can be used to deploy the application in defferent environment. For example, we may have environment specific value-files ([values-t.yaml](https://github.com/ebd622/k8s-into/blob/use-case_2/src/api-demo-chart/values-t.yaml), values-a.yaml and values-p.yaml) to deploy the application into T, A and P. At the same time we will use "generic" template-files to deploy the appication.
+Different `values-x.yaml` files can be used to deploy the application in defferent environment. <br/>
+For example, we may have environment specific value-files to deploy the application into T, A and P: 
+* [values-t.yaml](https://github.com/ebd622/k8s-into/blob/use-case_2/src/api-demo-chart/values-t.yaml)
+* values-a.yaml
+* values-p.yaml
+
+At the same time we will use "generic" template-files to deploy the appication.
 
 Run the commands to install the chart using different values:
 
