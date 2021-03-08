@@ -521,7 +521,7 @@ Different `values-x.yaml` files can be used to deploy the application in deffere
 For example, we may have environment specific value-files to deploy the application into T, A and P: 
 * [values-t.yaml](https://github.com/ebd622/k8s-into/blob/use-case_2/src/api-demo-chart/values-t.yaml)
 * [values-a.yaml](https://github.com/ebd622/k8s-into/blob/use-case_2/src/api-demo-chart/values-a.yaml)
-* values-p.yaml
+* [values-p.yaml](https://github.com/ebd622/k8s-into/blob/use-case_2/src/api-demo-chart/values-p.yaml)
 
 At the same time we will use "generic" template-files to deploy the appication.
 
