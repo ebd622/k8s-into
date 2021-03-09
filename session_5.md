@@ -519,7 +519,7 @@ git checkout use-case_2
 ```
 Different `values-x.yaml` files can be used to deploy the application in defferent environment. <br/>
 For example, we may have environment specific value-files to deploy the application into T, A and P: 
-* [values-t.yaml](https://github.com/ebd622/k8s-into/blob/use-case_2/src/api-demo-chart/values-t.yaml)
+* [values-t.yaml](https://github.com/ebd622/k8s-into/blob/use-case_2/src/api-demo-chart/values-t.yaml) - configuration values for Test
 * [values-a.yaml](https://github.com/ebd622/k8s-into/blob/use-case_2/src/api-demo-chart/values-a.yaml)
 * [values-p.yaml](https://github.com/ebd622/k8s-into/blob/use-case_2/src/api-demo-chart/values-p.yaml)
 
