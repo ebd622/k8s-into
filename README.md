@@ -1,6 +1,5 @@
 # k8s-into
-
-These is an introduction of Kuberntetes and hand-on exercises prepared for Chapter Time.
+These sessiong and hand-on exercises have beed prepared for Chapter Time to introduce Kuberntetes and some its features.
 
 * [Chapter time 1](https://github.com/ebd622/k8s-into/blob/master/session_1.md): Overview
 * [Chapter time 2](https://github.com/ebd622/k8s-into/blob/master/session_2.md): Kubernetes services
