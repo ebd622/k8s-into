@@ -133,7 +133,7 @@ Now Pometheus & Grafana services are available within a cluster (`ClusterIP` is 
 In order to access the web GUI from outside of cluster, we need to change default `ClusterIP` services to `NodePort`:
 
 ```
-kubectl edit svc prometheus-operator-xxxxxxx-prometheus
+kubectl edit svc prometheus-operator-xxxxxxx-grafana
 ```
 
 Let's check the updated service and find a NodePort number assigned by the cluster:
